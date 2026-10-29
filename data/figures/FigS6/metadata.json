@@ -23,7 +23,7 @@
           "array": "panel1_line1",
           "csv": "panel1_line1.csv",
           "label": "One controller",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -32,7 +32,7 @@
           "array": "panel1_line2",
           "csv": "panel1_line2.csv",
           "label": "Equal budget",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -41,7 +41,7 @@
           "array": "panel1_line3",
           "csv": "panel1_line3.csv",
           "label": "Full gain",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -50,7 +50,7 @@
           "array": "panel1_line4",
           "csv": "panel1_line4.csv",
           "label": "_child6",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -60,19 +60,19 @@
         {
           "array": "panel1_band1_1",
           "csv": "panel1_band1_1.csv",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "alpha": 0.14
         },
         {
           "array": "panel1_band2_1",
           "csv": "panel1_band2_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.14
         },
         {
           "array": "panel1_band3_1",
           "csv": "panel1_band3_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         }
       ],
@@ -80,17 +80,17 @@
       "legend": [
         {
           "label": "One controller",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-"
         },
         {
           "label": "Equal budget",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-"
         },
         {
           "label": "Full gain",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-"
         }
       ]
@@ -115,7 +115,7 @@
           "array": "panel2_line1",
           "csv": "panel2_line1.csv",
           "label": "Equal budget",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -124,7 +124,7 @@
           "array": "panel2_line2",
           "csv": "panel2_line2.csv",
           "label": "Equal detection",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -133,7 +133,7 @@
           "array": "panel2_line3",
           "csv": "panel2_line3.csv",
           "label": "Reversed sign",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -142,7 +142,7 @@
           "array": "panel2_line4",
           "csv": "panel2_line4.csv",
           "label": "_child6",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -152,19 +152,19 @@
         {
           "array": "panel2_band1_1",
           "csv": "panel2_band1_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.14
         },
         {
           "array": "panel2_band2_1",
           "csv": "panel2_band2_1.csv",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "alpha": 0.14
         },
         {
           "array": "panel2_band3_1",
           "csv": "panel2_band3_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         }
       ],
@@ -172,17 +172,17 @@
       "legend": [
         {
           "label": "Equal budget",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-"
         },
         {
           "label": "Equal detection",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-"
         },
         {
           "label": "Reversed sign",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-"
         }
       ]
@@ -207,7 +207,7 @@
           "array": "panel3_line1",
           "csv": "panel3_line1.csv",
           "label": "Off",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -216,7 +216,7 @@
           "array": "panel3_line2",
           "csv": "panel3_line2.csv",
           "label": "Full gain",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -234,7 +234,7 @@
           "array": "panel3_line4",
           "csv": "panel3_line4.csv",
           "label": "_child6",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -244,13 +244,13 @@
         {
           "array": "panel3_band1_1",
           "csv": "panel3_band1_1.csv",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "alpha": 0.14
         },
         {
           "array": "panel3_band2_1",
           "csv": "panel3_band2_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         },
         {
@@ -264,12 +264,12 @@
       "legend": [
         {
           "label": "Off",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-"
         },
         {
           "label": "Full gain",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-"
         },
         {
@@ -299,7 +299,7 @@
           "array": "panel4_line1",
           "csv": "panel4_line1.csv",
           "label": "Off",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -308,7 +308,7 @@
           "array": "panel4_line2",
           "csv": "panel4_line2.csv",
           "label": "Full gain",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -326,7 +326,7 @@
           "array": "panel4_line4",
           "csv": "panel4_line4.csv",
           "label": "_child3",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -337,12 +337,12 @@
       "legend": [
         {
           "label": "Off",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-"
         },
         {
           "label": "Full gain",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-"
         },
         {
@@ -356,5 +356,6 @@
   "legend": [],
   "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
   "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
-  "caption_latex": "Independent five-site controller controls from the explicit-cavity SSE. {(a):} Signed endpoint correlation $G_{15}^{zz}$ for one controller, three controllers sharing the same summed squared gain (equal budget), and three controllers each at the full single-site gain. {(b)} $G_{15}^{yy}$ for the equal-budget controller, the same gains with detection efficiencies reduced to $1/3$ (equal detection), and the equal-budget controller with the gains on sites 2 and 4 reversed in sign. {(c)} $G_{15}^{zz}$ with feedback off, full-gain feedback, and independent noise at the same full gains. {(d):} Mean total photon population $\\sum_j\\langle n_j\\rangle$ for the three cases in {(c)}. {The plots in} {(a,c)} share a vertical scale. {The no-feedback, one-controller, equal-budget, full-gain and noise-only conditions contain 768, 1536, 768, 1536 and 1024 paths, respectively. Equal-detection and reversed-sign controls each contain 64 paths. All correlation bands are pointwise 95\\% whole-block intervals, with antithetic partners resampled together and connected moments formed after averaging the density. The photon curves in (d) use the corresponding path-weighted means without bands because photon moments were retained only as batch averages. Full gain is orange, equal budget purple and one controller teal; no feedback is grey and independent noise charcoal. In (b), equal detection is teal and reversed sign orange.} Greater photon population under independent drive noise does not reproduce the correlation response. These are mechanism controls, not reduced-root HOPS trajectories."
+  "caption_latex": "Independent five-site controller controls from the explicit-cavity SSE. {(a):} Signed endpoint correlation $G_{15}^{zz}$ for one controller, three controllers sharing the same summed squared gain (equal budget), and three controllers each at the full single-site gain. {(b)} $G_{15}^{yy}$ for the equal-budget controller, the same gains with detection efficiencies reduced to $1/3$ (equal detection), and the equal-budget controller with the gains on sites 2 and 4 reversed in sign. {(c)} $G_{15}^{zz}$ with feedback off, full-gain feedback, and independent noise at the same full gains. {(d):} Mean total photon population $\\sum_j\\langle n_j\\rangle$ for the three cases in {(c)}. {The plots in} {(a,c)} share a vertical scale. {The no-feedback, one-controller, equal-budget, full-gain and noise-only conditions contain 768, 1536, 768, 1536 and 1024 paths, respectively. Equal-detection and reversed-sign controls each contain 64 paths. All correlation bands are pointwise 95\\% whole-block intervals, with antithetic partners resampled together and connected moments formed after averaging the density. The photon curves in (d) use the corresponding path-weighted means without bands because photon moments were retained only as batch averages. Full gain is orange, equal budget purple and one controller teal; no feedback is grey and independent noise charcoal. In (b), equal detection is teal and reversed sign orange.} Greater photon population under independent drive noise does not reproduce the correlation response. These are mechanism controls, not reduced-root HOPS trajectories.",
+  "presentation_revision": "Approved lightness-separated palette, 2026-10-29. Original scientific markers retained; no additional decorative markers."
 }

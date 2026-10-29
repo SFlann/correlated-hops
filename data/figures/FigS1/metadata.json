@@ -23,7 +23,7 @@
           "array": "panel1_line1",
           "csv": "panel1_line1.csv",
           "label": "No feedback",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -32,7 +32,7 @@
           "array": "panel1_line2",
           "csv": "panel1_line2.csv",
           "label": "Continuous feedback",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -41,7 +41,7 @@
           "array": "panel1_line3",
           "csv": "panel1_line3.csv",
           "label": "Noise only",
-          "colour": "#84929a",
+          "colour": "#858d94",
           "linestyle": ":",
           "marker": "None",
           "coordinates": "data"
@@ -80,7 +80,7 @@
           "array": "panel2_line1",
           "csv": "panel2_line1.csv",
           "label": "No feedback",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -89,7 +89,7 @@
           "array": "panel2_line2",
           "csv": "panel2_line2.csv",
           "label": "Continuous feedback",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -98,7 +98,7 @@
           "array": "panel2_line3",
           "csv": "panel2_line3.csv",
           "label": "Noise only",
-          "colour": "#84929a",
+          "colour": "#858d94",
           "linestyle": ":",
           "marker": "None",
           "coordinates": "data"
@@ -107,7 +107,7 @@
           "array": "panel2_line4",
           "csv": "panel2_line4.csv",
           "label": "Matched $2\\eta_{\\rm d}\\gamma_2$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -146,7 +146,7 @@
           "array": "panel3_line1",
           "csv": "panel3_line1.csv",
           "label": "No feedback",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -155,7 +155,7 @@
           "array": "panel3_line2",
           "csv": "panel3_line2.csv",
           "label": "Continuous feedback",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -164,7 +164,7 @@
           "array": "panel3_line3",
           "csv": "panel3_line3.csv",
           "label": "Noise only",
-          "colour": "#84929a",
+          "colour": "#858d94",
           "linestyle": ":",
           "marker": "None",
           "coordinates": "data"
@@ -203,7 +203,7 @@
           "array": "panel4_line1",
           "csv": "panel4_line1.csv",
           "label": "No feedback",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -212,7 +212,7 @@
           "array": "panel4_line2",
           "csv": "panel4_line2.csv",
           "label": "Continuous feedback",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -221,7 +221,7 @@
           "array": "panel4_line3",
           "csv": "panel4_line3.csv",
           "label": "Noise only",
-          "colour": "#84929a",
+          "colour": "#858d94",
           "linestyle": ":",
           "marker": "None",
           "coordinates": "data"
@@ -230,7 +230,7 @@
           "array": "panel4_line4",
           "csv": "panel4_line4.csv",
           "label": "Matched $2\\eta_{\\rm d}\\gamma_2$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -269,7 +269,7 @@
           "array": "panel5_line1",
           "csv": "panel5_line1.csv",
           "label": "No feedback",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -278,7 +278,7 @@
           "array": "panel5_line2",
           "csv": "panel5_line2.csv",
           "label": "Continuous feedback",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -287,7 +287,7 @@
           "array": "panel5_line3",
           "csv": "panel5_line3.csv",
           "label": "Noise only",
-          "colour": "#84929a",
+          "colour": "#858d94",
           "linestyle": ":",
           "marker": "None",
           "coordinates": "data"
@@ -326,7 +326,7 @@
           "array": "panel6_line1",
           "csv": "panel6_line1.csv",
           "label": "No feedback",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -335,7 +335,7 @@
           "array": "panel6_line2",
           "csv": "panel6_line2.csv",
           "label": "Continuous feedback",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -344,7 +344,7 @@
           "array": "panel6_line3",
           "csv": "panel6_line3.csv",
           "label": "Noise only",
-          "colour": "#84929a",
+          "colour": "#858d94",
           "linestyle": ":",
           "marker": "None",
           "coordinates": "data"
@@ -353,7 +353,7 @@
           "array": "panel6_line4",
           "csv": "panel6_line4.csv",
           "label": "Matched $2\\eta_{\\rm d}\\gamma_2$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -376,22 +376,22 @@
   "legend": [
     {
       "label": "No feedback",
-      "colour": "#087f8c",
+      "colour": "#004955",
       "linestyle": "--"
     },
     {
       "label": "Continuous feedback",
-      "colour": "#7752a4",
+      "colour": "#8056a8",
       "linestyle": "-"
     },
     {
       "label": "Noise only",
-      "colour": "#84929a",
+      "colour": "#858d94",
       "linestyle": ":"
     },
     {
       "label": "Matched $2\\eta_{\\rm d}\\gamma_2$",
-      "colour": "#ce6c30",
+      "colour": "#e9a967",
       "linestyle": "-."
     },
     {
@@ -402,5 +402,6 @@
   ],
   "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
   "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
-  "caption_latex": "Supporting spin readout for the continuous-feedback controls of main Fig.~2. The left column [{(a,c,e)}] uses uniform number losses $(0.2,0.2,0.2)\\omega_c$; the right column [{(b,d,f)}] uses weak-end losses $(0.04,0.52,0.04)\\omega_c$. {(a,b):} Connected endpoint correlations $G_{13}^{xx}$. {(c,d):} Fidelity $F_{\\Phi^+}$ with the fixed Bell state: the shaded region above $1/2$ certifies entanglement using three raw spin-correlation moments. {(e,f):} Concurrence $\\mathcal C_{13}$ of the averaged endpoint state. Curves compare feedback off, continuous feedback and independent drive noise; the weak-end column also includes the matched detection coefficient control. The $J_b=0$ line is shown in {(a,b,e,f)}, where factorisation fixes it to zero; it is omitted from {(c,d)}, where factorisation does not imply zero fidelity. All coloured curves are deterministic total-photon-cap-five references. Like-for-like panels use matched scales."
+  "caption_latex": "Supporting spin readout for the continuous-feedback controls of main Fig.~2. The left column [{(a,c,e)}] uses uniform number losses $(0.2,0.2,0.2)\\omega_c$; the right column [{(b,d,f)}] uses weak-end losses $(0.04,0.52,0.04)\\omega_c$. {(a,b):} Connected endpoint correlations $G_{13}^{xx}$. {(c,d):} Fidelity $F_{\\Phi^+}$ with the fixed Bell state: the shaded region above $1/2$ certifies entanglement using three raw spin-correlation moments. {(e,f):} Concurrence $\\mathcal C_{13}$ of the averaged endpoint state. Curves compare feedback off, continuous feedback and independent drive noise; the weak-end column also includes the matched detection coefficient control. The $J_b=0$ line is shown in {(a,b,e,f)}, where factorisation fixes it to zero; it is omitted from {(c,d)}, where factorisation does not imply zero fidelity. All coloured curves are deterministic total-photon-cap-five references. Like-for-like panels use matched scales.",
+  "presentation_revision": "Approved lightness-separated palette, 2026-10-29. Original scientific markers retained; no additional decorative markers."
 }

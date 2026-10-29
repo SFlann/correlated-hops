@@ -26,14 +26,6 @@ def plot(figure, output):
         squeeze=False,
         layout="constrained",
     )
-    markers = {
-        "#087f8c": "o",
-        "#7752a4": "s",
-        "#ce6c30": "^",
-        "#84929a": "D",
-        "#83919b": "D",
-        "#287cac": "v",
-    }
     for ax, panel in zip(axes.flat, meta["panels"]):
         for band in panel["bands"]:
             a = data[band["array"]]
@@ -49,13 +41,6 @@ def plot(figure, output):
                 continue
             if line["marker"] not in ("None", "", None):
                 kw.update(marker=line["marker"], ms=2.5)
-            elif line["linestyle"] == "-" and line["colour"] in markers:
-                kw.update(
-                    marker=markers[line["colour"]],
-                    mfc="white",
-                    ms=3,
-                    markevery=max(1, len(a) // 5),
-                )
             ax.plot(a[:, 0], a[:, 1], **kw)
         for error in panel["error_segments"]:
             ax.add_collection(
@@ -83,9 +68,7 @@ def plot(figure, output):
                     color=e["colour"],
                     ls=e["linestyle"],
                     label=e["label"],
-                    marker=markers.get(e["colour"], None)
-                    if e["linestyle"] == "-"
-                    else None,
+                    marker=e.get("marker", None),
                     ms=3,
                     mfc="white",
                 )

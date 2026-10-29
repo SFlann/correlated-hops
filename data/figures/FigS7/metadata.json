@@ -32,7 +32,7 @@
           "array": "panel1_line2",
           "csv": "panel1_line2.csv",
           "label": "$J_b/\\omega_c=0.1$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -41,7 +41,7 @@
           "array": "panel1_line3",
           "csv": "panel1_line3.csv",
           "label": "$J_b/\\omega_c=0.25$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -50,7 +50,7 @@
           "array": "panel1_line4",
           "csv": "panel1_line4.csv",
           "label": "_child4",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -60,7 +60,7 @@
         {
           "array": "panel1_band1_1",
           "csv": "panel1_band1_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.2
         }
       ],
@@ -73,12 +73,12 @@
         },
         {
           "label": "$J_b/\\omega_c=0.1$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--"
         },
         {
           "label": "$J_b/\\omega_c=0.25$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-"
         }
       ]
@@ -112,7 +112,7 @@
           "array": "panel2_line2",
           "csv": "panel2_line2.csv",
           "label": "$J_b/\\omega_c=0.1$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -121,7 +121,7 @@
           "array": "panel2_line3",
           "csv": "panel2_line3.csv",
           "label": "$J_b/\\omega_c=0.25$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -130,7 +130,7 @@
           "array": "panel2_line4",
           "csv": "panel2_line4.csv",
           "label": "_child4",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -140,7 +140,7 @@
         {
           "array": "panel2_band1_1",
           "csv": "panel2_band1_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.2
         }
       ],
@@ -153,12 +153,12 @@
         },
         {
           "label": "$J_b/\\omega_c=0.1$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--"
         },
         {
           "label": "$J_b/\\omega_c=0.25$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-"
         }
       ]
@@ -192,7 +192,7 @@
           "array": "panel3_line2",
           "csv": "panel3_line2.csv",
           "label": "$J_b/\\omega_c=0.1$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -201,7 +201,7 @@
           "array": "panel3_line3",
           "csv": "panel3_line3.csv",
           "label": "$J_b/\\omega_c=0.25$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -210,7 +210,7 @@
           "array": "panel3_line4",
           "csv": "panel3_line4.csv",
           "label": "_child4",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -220,7 +220,7 @@
         {
           "array": "panel3_band1_1",
           "csv": "panel3_band1_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.2
         }
       ],
@@ -233,12 +233,12 @@
         },
         {
           "label": "$J_b/\\omega_c=0.1$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--"
         },
         {
           "label": "$J_b/\\omega_c=0.25$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-"
         }
       ]
@@ -272,7 +272,7 @@
           "array": "panel4_line2",
           "csv": "panel4_line2.csv",
           "label": "$J_b/\\omega_c=0.1$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -281,7 +281,7 @@
           "array": "panel4_line3",
           "csv": "panel4_line3.csv",
           "label": "$J_b/\\omega_c=0.25$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -290,7 +290,7 @@
           "array": "panel4_line4",
           "csv": "panel4_line4.csv",
           "label": "_child4",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -300,7 +300,7 @@
         {
           "array": "panel4_band1_1",
           "csv": "panel4_band1_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.2
         }
       ],
@@ -313,12 +313,12 @@
         },
         {
           "label": "$J_b/\\omega_c=0.1$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--"
         },
         {
           "label": "$J_b/\\omega_c=0.25$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-"
         }
       ]
@@ -327,5 +327,6 @@
   "legend": [],
   "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
   "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
-  "caption_latex": "Photon observables for the same local Rabi preparation and weak-end losses as main Fig.~1. {(a):} End-cavity population $\\langle n_1\\rangle$. {(b):} Real nearest-neighbour first-order coherence $10^2\\operatorname{Re}\\langle a_1^\\dagger a_2\\rangle$. {(c):} Real end-cavity first-order coherence $10^2\\operatorname{Re}\\langle a_1^\\dagger a_3\\rangle$. {(d):} Connected end-cavity photon-number correlation $10^3\\langle n_1n_3\\rangle_c$. Every panel compares $J_b/\\omega_c=0,0.1,0.25$ as a function of $\\omega_ct$. Main curves are explicit-cavity references; at $J_b=0.25\\omega_c$, fine dotted lines and shading show independent HOPS means and pointwise 95\\% intervals from physical auxiliary estimators. The zero-hopping cross correlations vanish exactly by factorisation. Photon population alone is not a measure of intersite communication."
+  "caption_latex": "Photon observables for the same local Rabi preparation and weak-end losses as main Fig.~1. {(a):} End-cavity population $\\langle n_1\\rangle$. {(b):} Real nearest-neighbour first-order coherence $10^2\\operatorname{Re}\\langle a_1^\\dagger a_2\\rangle$. {(c):} Real end-cavity first-order coherence $10^2\\operatorname{Re}\\langle a_1^\\dagger a_3\\rangle$. {(d):} Connected end-cavity photon-number correlation $10^3\\langle n_1n_3\\rangle_c$. Every panel compares $J_b/\\omega_c=0,0.1,0.25$ as a function of $\\omega_ct$. Main curves are explicit-cavity references; at $J_b=0.25\\omega_c$, fine dotted lines and shading show independent HOPS means and pointwise 95\\% intervals from physical auxiliary estimators. The zero-hopping cross correlations vanish exactly by factorisation. Photon population alone is not a measure of intersite communication.",
+  "presentation_revision": "Approved lightness-separated palette, 2026-10-29. Original scientific markers retained; no additional decorative markers."
 }

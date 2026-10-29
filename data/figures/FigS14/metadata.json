@@ -23,7 +23,7 @@
           "array": "panel1_line1",
           "csv": "panel1_line1.csv",
           "label": "$W$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -32,7 +32,7 @@
           "array": "panel1_line2",
           "csv": "panel1_line2.csv",
           "label": "_nolegend_",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "None",
           "marker": "o",
           "coordinates": "data"
@@ -41,7 +41,7 @@
           "array": "panel1_line3",
           "csv": "panel1_line3.csv",
           "label": "_nolegend_",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "None",
           "marker": "_",
           "coordinates": "data"
@@ -50,7 +50,7 @@
           "array": "panel1_line4",
           "csv": "panel1_line4.csv",
           "label": "_nolegend_",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "None",
           "marker": "_",
           "coordinates": "data"
@@ -59,7 +59,7 @@
           "array": "panel1_line5",
           "csv": "panel1_line5.csv",
           "label": "$W^T$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -68,7 +68,7 @@
           "array": "panel1_line6",
           "csv": "panel1_line6.csv",
           "label": "_nolegend_",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "None",
           "marker": "s",
           "coordinates": "data"
@@ -77,7 +77,7 @@
           "array": "panel1_line7",
           "csv": "panel1_line7.csv",
           "label": "_nolegend_",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "None",
           "marker": "_",
           "coordinates": "data"
@@ -86,7 +86,7 @@
           "array": "panel1_line8",
           "csv": "panel1_line8.csv",
           "label": "_nolegend_",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "None",
           "marker": "_",
           "coordinates": "data"
@@ -95,7 +95,7 @@
           "array": "panel1_line9",
           "csv": "panel1_line9.csv",
           "label": "_child11",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -105,86 +105,86 @@
       "error_segments": [
         {
           "array": "panel1_error1_1",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel1_error1_2",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel1_error1_3",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel1_error1_4",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel1_error1_5",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel1_error1_6",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel1_error1_7",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel1_error1_8",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel1_error1_9",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel1_error2_1",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel1_error2_2",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel1_error2_3",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel1_error2_4",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel1_error2_5",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel1_error2_6",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel1_error2_7",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel1_error2_8",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel1_error2_9",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         }
       ],
       "legend": [
         {
           "label": "$W$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-"
         },
         {
           "label": "$W^T$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-"
         }
       ]
@@ -209,7 +209,7 @@
           "array": "panel2_line1",
           "csv": "panel2_line1.csv",
           "label": "$W$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -218,7 +218,7 @@
           "array": "panel2_line2",
           "csv": "panel2_line2.csv",
           "label": "_nolegend_",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "None",
           "marker": "o",
           "coordinates": "data"
@@ -227,7 +227,7 @@
           "array": "panel2_line3",
           "csv": "panel2_line3.csv",
           "label": "_nolegend_",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "None",
           "marker": "_",
           "coordinates": "data"
@@ -236,7 +236,7 @@
           "array": "panel2_line4",
           "csv": "panel2_line4.csv",
           "label": "_nolegend_",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "None",
           "marker": "_",
           "coordinates": "data"
@@ -245,7 +245,7 @@
           "array": "panel2_line5",
           "csv": "panel2_line5.csv",
           "label": "$W^T$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -254,7 +254,7 @@
           "array": "panel2_line6",
           "csv": "panel2_line6.csv",
           "label": "_nolegend_",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "None",
           "marker": "s",
           "coordinates": "data"
@@ -263,7 +263,7 @@
           "array": "panel2_line7",
           "csv": "panel2_line7.csv",
           "label": "_nolegend_",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "None",
           "marker": "_",
           "coordinates": "data"
@@ -272,7 +272,7 @@
           "array": "panel2_line8",
           "csv": "panel2_line8.csv",
           "label": "_nolegend_",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "None",
           "marker": "_",
           "coordinates": "data"
@@ -281,7 +281,7 @@
           "array": "panel2_line9",
           "csv": "panel2_line9.csv",
           "label": "_child11",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -291,86 +291,86 @@
       "error_segments": [
         {
           "array": "panel2_error1_1",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel2_error1_2",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel2_error1_3",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel2_error1_4",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel2_error1_5",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel2_error1_6",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel2_error1_7",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel2_error1_8",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel2_error1_9",
-          "colour": "#087f8c"
+          "colour": "#004955"
         },
         {
           "array": "panel2_error2_1",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel2_error2_2",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel2_error2_3",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel2_error2_4",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel2_error2_5",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel2_error2_6",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel2_error2_7",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel2_error2_8",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         },
         {
           "array": "panel2_error2_9",
-          "colour": "#7752a4"
+          "colour": "#8056a8"
         }
       ],
       "legend": [
         {
           "label": "$W$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-"
         },
         {
           "label": "$W^T$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-"
         }
       ]
@@ -404,7 +404,7 @@
           "array": "panel3_line2",
           "csv": "panel3_line2.csv",
           "label": "$J\\Delta t=0.00125$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -413,7 +413,7 @@
           "array": "panel3_line3",
           "csv": "panel3_line3.csv",
           "label": "_child3",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -429,7 +429,7 @@
         },
         {
           "label": "$J\\Delta t=0.00125$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--"
         }
       ]
@@ -463,7 +463,7 @@
           "array": "panel4_line2",
           "csv": "panel4_line2.csv",
           "label": "$J\\Delta t=0.00125$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -472,7 +472,7 @@
           "array": "panel4_line3",
           "csv": "panel4_line3.csv",
           "label": "_child3",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -488,7 +488,7 @@
         },
         {
           "label": "$J\\Delta t=0.00125$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--"
         }
       ]
@@ -497,5 +497,6 @@
   "legend": [],
   "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
   "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
-  "caption_latex": "Additional implementation checks. {(a)} $10^3\\operatorname{Re}\\langle a_1^\\dagger a_3\\rangle$ in the complex three-mode loop for physical drift $W$ and the changed-flux drift $W^T$. {(b):} The corresponding $10^4\\operatorname{Im}\\langle a_1^\\dagger a_3\\rangle$. In {(a,b)}, solid curves are independent cavity references; open markers and one-standard-error bars are nonlinear HOPS, with 1,024 paths for $W$ and 512 for $W^T$; some bars are smaller than the markers. {(c,d)} use $N=20$ and $J_b=+2J$. {(c):} The single-trajectory contribution $q_{xy,\\mathrm{stag}}^{(11)}(r=5)$ to {the symmetry-averaged exchange-chain estimator}, comparing $J\\Delta t=0.0025$ and 0.00125 on shared noise anchors. {(d):} The analogous transverse-XXZ contribution $q_{yy}^{(11)}(r=3)$ for the same two resolutions. Exact ensemble symmetries make the corresponding disconnected terms vanish, but {(c,d)} are individual-trajectory contributions, not ensemble correlator estimates, and have no ensemble error bars."
+  "caption_latex": "Additional implementation checks. {(a)} $10^3\\operatorname{Re}\\langle a_1^\\dagger a_3\\rangle$ in the complex three-mode loop for physical drift $W$ and the changed-flux drift $W^T$. {(b):} The corresponding $10^4\\operatorname{Im}\\langle a_1^\\dagger a_3\\rangle$. In {(a,b)}, solid curves are independent cavity references; open markers and one-standard-error bars are nonlinear HOPS, with 1,024 paths for $W$ and 512 for $W^T$; some bars are smaller than the markers. {(c,d)} use $N=20$ and $J_b=+2J$. {(c):} The single-trajectory contribution $q_{xy,\\mathrm{stag}}^{(11)}(r=5)$ to {the symmetry-averaged exchange-chain estimator}, comparing $J\\Delta t=0.0025$ and 0.00125 on shared noise anchors. {(d):} The analogous transverse-XXZ contribution $q_{yy}^{(11)}(r=3)$ for the same two resolutions. Exact ensemble symmetries make the corresponding disconnected terms vanish, but {(c,d)} are individual-trajectory contributions, not ensemble correlator estimates, and have no ensemble error bars.",
+  "presentation_revision": "Approved lightness-separated palette, 2026-10-29. Original scientific markers retained; no additional decorative markers."
 }

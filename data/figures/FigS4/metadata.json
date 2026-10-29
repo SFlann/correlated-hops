@@ -23,7 +23,7 @@
           "array": "panel1_line1",
           "csv": "panel1_line1.csv",
           "label": "_child0",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -32,7 +32,7 @@
           "array": "panel1_line2",
           "csv": "panel1_line2.csv",
           "label": "_child1",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -41,7 +41,7 @@
           "array": "panel1_line3",
           "csv": "panel1_line3.csv",
           "label": "_child2",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -50,7 +50,7 @@
           "array": "panel1_line4",
           "csv": "panel1_line4.csv",
           "label": "_child3",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -59,7 +59,7 @@
           "array": "panel1_line5",
           "csv": "panel1_line5.csv",
           "label": "_child4",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -68,7 +68,7 @@
           "array": "panel1_line6",
           "csv": "panel1_line6.csv",
           "label": "_child5",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -98,7 +98,7 @@
           "array": "panel2_line1",
           "csv": "panel2_line1.csv",
           "label": "_child0",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -107,7 +107,7 @@
           "array": "panel2_line2",
           "csv": "panel2_line2.csv",
           "label": "_child1",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -116,7 +116,7 @@
           "array": "panel2_line3",
           "csv": "panel2_line3.csv",
           "label": "_child2",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -125,7 +125,7 @@
           "array": "panel2_line4",
           "csv": "panel2_line4.csv",
           "label": "_child3",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -134,7 +134,7 @@
           "array": "panel2_line5",
           "csv": "panel2_line5.csv",
           "label": "_child4",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -143,7 +143,7 @@
           "array": "panel2_line6",
           "csv": "panel2_line6.csv",
           "label": "_child5",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -173,7 +173,7 @@
           "array": "panel3_line1",
           "csv": "panel3_line1.csv",
           "label": "_child0",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -182,7 +182,7 @@
           "array": "panel3_line2",
           "csv": "panel3_line2.csv",
           "label": "_child1",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -191,7 +191,7 @@
           "array": "panel3_line3",
           "csv": "panel3_line3.csv",
           "label": "_child2",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -200,7 +200,7 @@
           "array": "panel3_line4",
           "csv": "panel3_line4.csv",
           "label": "_child3",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -209,7 +209,7 @@
           "array": "panel3_line5",
           "csv": "panel3_line5.csv",
           "label": "_child4",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -218,7 +218,7 @@
           "array": "panel3_line6",
           "csv": "panel3_line6.csv",
           "label": "_child5",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -248,7 +248,7 @@
           "array": "panel4_line1",
           "csv": "panel4_line1.csv",
           "label": "_child0",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -257,7 +257,7 @@
           "array": "panel4_line2",
           "csv": "panel4_line2.csv",
           "label": "_child1",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -266,7 +266,7 @@
           "array": "panel4_line3",
           "csv": "panel4_line3.csv",
           "label": "_child2",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -275,7 +275,7 @@
           "array": "panel4_line4",
           "csv": "panel4_line4.csv",
           "label": "_child3",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -284,7 +284,7 @@
           "array": "panel4_line5",
           "csv": "panel4_line5.csv",
           "label": "_child4",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -293,7 +293,7 @@
           "array": "panel4_line6",
           "csv": "panel4_line6.csv",
           "label": "_child5",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -307,21 +307,22 @@
   "legend": [
     {
       "label": "Feedback off",
-      "colour": "#7752a4",
+      "colour": "#8056a8",
       "linestyle": "-"
     },
     {
       "label": "Feedback on",
-      "colour": "#ce6c30",
+      "colour": "#e9a967",
       "linestyle": "-"
     },
     {
       "label": "Noise only",
-      "colour": "#087f8c",
+      "colour": "#004955",
       "linestyle": "-"
     }
   ],
   "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
   "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
-  "caption_latex": "Isolated spin--cavity feedback control. {(a,b):} Mixed covariance magnitude $|\\langle\\sigma^y p\\rangle_c|$, with $p=(a-a^\\dagger)/(i\\sqrt{2})$, for number-loss rates $\\kappa/\\omega_c=0.2$ and $0.52$, respectively. {(c,d):} Spin--cavity entanglement negativity for the same two loss rates. Each panel compares feedback off (purple), feedback on (orange) and independent drive noise (teal); matching observables share a vertical scale. The local Rabi parameters, vacuum/ground preparation, gain $f=0.15\\sqrt{\\omega_c}$ and phase $\\pi/2$ match the chain. Independent noise does not reproduce the feedback-assisted persistence. Solid photon-cap-eight master equations overlap the dotted cap-five checks: maximum changes are $3.1\\times10^{-6}$ in mixed correlations and $9.3\\times10^{-7}$ in negativity. These deterministic controls are not HOPS."
+  "caption_latex": "Isolated spin--cavity feedback control. {(a,b):} Mixed covariance magnitude $|\\langle\\sigma^y p\\rangle_c|$, with $p=(a-a^\\dagger)/(i\\sqrt{2})$, for number-loss rates $\\kappa/\\omega_c=0.2$ and $0.52$, respectively. {(c,d):} Spin--cavity entanglement negativity for the same two loss rates. Each panel compares feedback off (purple), feedback on (orange) and independent drive noise (teal); matching observables share a vertical scale. The local Rabi parameters, vacuum/ground preparation, gain $f=0.15\\sqrt{\\omega_c}$ and phase $\\pi/2$ match the chain. Independent noise does not reproduce the feedback-assisted persistence. Solid photon-cap-eight master equations overlap the dotted cap-five checks: maximum changes are $3.1\\times10^{-6}$ in mixed correlations and $9.3\\times10^{-7}$ in negativity. These deterministic controls are not HOPS.",
+  "presentation_revision": "Approved lightness-separated palette, 2026-10-29. Original scientific markers retained; no additional decorative markers."
 }

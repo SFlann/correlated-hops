@@ -23,7 +23,7 @@
           "array": "panel1_line1",
           "csv": "panel1_line1.csv",
           "label": "Uniform, full",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": ":",
           "marker": "None",
           "coordinates": "data"
@@ -32,7 +32,7 @@
           "array": "panel1_line2",
           "csv": "panel1_line2.csv",
           "label": "Weak ends, full",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -41,7 +41,7 @@
           "array": "panel1_line3",
           "csv": "panel1_line3.csv",
           "label": "Weak ends, approx.",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -52,17 +52,17 @@
       "legend": [
         {
           "label": "Uniform, full",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": ":"
         },
         {
           "label": "Weak ends, full",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-"
         },
         {
           "label": "Weak ends, approx.",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--"
         }
       ]
@@ -87,7 +87,7 @@
           "array": "panel2_line1",
           "csv": "panel2_line1.csv",
           "label": "Uniform, full",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": ":",
           "marker": "None",
           "coordinates": "data"
@@ -96,7 +96,7 @@
           "array": "panel2_line2",
           "csv": "panel2_line2.csv",
           "label": "Weak ends, full",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -105,7 +105,7 @@
           "array": "panel2_line3",
           "csv": "panel2_line3.csv",
           "label": "Weak ends, approx.",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -116,17 +116,17 @@
       "legend": [
         {
           "label": "Uniform, full",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": ":"
         },
         {
           "label": "Weak ends, full",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-"
         },
         {
           "label": "Weak ends, approx.",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--"
         }
       ]
@@ -135,5 +135,6 @@
   "legend": [],
   "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
   "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
-  "caption_latex": "Effect of discarding damping couplings between Hamiltonian normal modes at $J_b=0.25\\omega_c$. {(a):} Unread endpoint concurrence $\\mathcal C_{13}$ versus $\\omega_ct$ for the full uniform-loss model, the full weak-end model and the weak-end independent-normal-mode approximation. {(b):} The corresponding corrected concurrence after the terminal $Y_2$ measurement and feedback operation. Every curve uses the explicit-cavity reference solver, so the comparison changes the bath model rather than the numerical method. The approximation keeps only diagonal normal-mode damping and retains the exactly transformed spin couplings."
+  "caption_latex": "Effect of discarding damping couplings between Hamiltonian normal modes at $J_b=0.25\\omega_c$. {(a):} Unread endpoint concurrence $\\mathcal C_{13}$ versus $\\omega_ct$ for the full uniform-loss model, the full weak-end model and the weak-end independent-normal-mode approximation. {(b):} The corresponding corrected concurrence after the terminal $Y_2$ measurement and feedback operation. Every curve uses the explicit-cavity reference solver, so the comparison changes the bath model rather than the numerical method. The approximation keeps only diagonal normal-mode damping and retains the exactly transformed spin couplings.",
+  "presentation_revision": "Approved lightness-separated palette, 2026-10-29. Original scientific markers retained; no additional decorative markers."
 }

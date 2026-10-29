@@ -23,7 +23,7 @@
           "array": "panel1_line1",
           "csv": "panel1_line1.csv",
           "label": "Cavity reference",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -32,7 +32,7 @@
           "array": "panel1_line2",
           "csv": "panel1_line2.csv",
           "label": "Conditioned hierarchy",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -42,7 +42,7 @@
         {
           "array": "panel1_band1_1",
           "csv": "panel1_band1_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.2
         }
       ],
@@ -69,7 +69,7 @@
           "array": "panel2_line1",
           "csv": "panel2_line1.csv",
           "label": "Cavity reference",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -78,7 +78,7 @@
           "array": "panel2_line2",
           "csv": "panel2_line2.csv",
           "label": "Conditioned hierarchy",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -88,7 +88,7 @@
         {
           "array": "panel2_band1_1",
           "csv": "panel2_band1_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.2
         }
       ],
@@ -115,7 +115,7 @@
           "array": "panel3_line1",
           "csv": "panel3_line1.csv",
           "label": "Cavity reference",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -124,7 +124,7 @@
           "array": "panel3_line2",
           "csv": "panel3_line2.csv",
           "label": "Conditioned hierarchy",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -143,7 +143,7 @@
         {
           "array": "panel3_band1_1",
           "csv": "panel3_band1_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.2
         }
       ],
@@ -170,7 +170,7 @@
           "array": "panel4_line1",
           "csv": "panel4_line1.csv",
           "label": "Cavity reference",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -179,7 +179,7 @@
           "array": "panel4_line2",
           "csv": "panel4_line2.csv",
           "label": "Conditioned hierarchy",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -189,7 +189,7 @@
         {
           "array": "panel4_band1_1",
           "csv": "panel4_band1_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.2
         }
       ],
@@ -200,16 +200,17 @@
   "legend": [
     {
       "label": "Cavity reference",
-      "colour": "#087f8c",
+      "colour": "#004955",
       "linestyle": "-"
     },
     {
       "label": "Conditioned hierarchy",
-      "colour": "#7752a4",
+      "colour": "#8056a8",
       "linestyle": "--"
     }
   ],
   "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
   "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
-  "caption_latex": "Independent continuous-feedback trajectory check at the weak-end setting of main Fig.~2. {(a):} Connected endpoint correlation $G_{13}^{yy}$. {(b):} Connected endpoint correlation $G_{13}^{zz}$. {(c):} Fixed Bell-state fidelity $F_{\\Phi^+}$, with the entanglement threshold $1/2$ indicated. {(d):} Concurrence $\\mathcal C_{13}$ of the averaged endpoint state. Each panel compares the conditioned coefficient hierarchy (purple dashed) with the master equation (teal solid), both at total photon cap three. Shading gives approximate pointwise 95\\% intervals from 256 resamples of sixteen independent blocks containing 512 records in total; connected products and concurrence are recomputed after averaging each resample. {A leave-one-block-out correction removes the leading product bias of connected moments.} These trajectories use $\\omega_c\\dd t=0.0025$ and are distinct from the unmonitored HOPS ensembles of main Fig.~1."
+  "caption_latex": "Independent continuous-feedback trajectory check at the weak-end setting of main Fig.~2. {(a):} Connected endpoint correlation $G_{13}^{yy}$. {(b):} Connected endpoint correlation $G_{13}^{zz}$. {(c):} Fixed Bell-state fidelity $F_{\\Phi^+}$, with the entanglement threshold $1/2$ indicated. {(d):} Concurrence $\\mathcal C_{13}$ of the averaged endpoint state. Each panel compares the conditioned coefficient hierarchy (purple dashed) with the master equation (teal solid), both at total photon cap three. Shading gives approximate pointwise 95\\% intervals from 256 resamples of sixteen independent blocks containing 512 records in total; connected products and concurrence are recomputed after averaging each resample. {A leave-one-block-out correction removes the leading product bias of connected moments.} These trajectories use $\\omega_c\\dd t=0.0025$ and are distinct from the unmonitored HOPS ensembles of main Fig.~1.",
+  "presentation_revision": "Approved lightness-separated palette, 2026-10-29. Original scientific markers retained; no additional decorative markers."
 }

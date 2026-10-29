@@ -32,7 +32,7 @@
           "array": "panel1_line2",
           "csv": "panel1_line2.csv",
           "label": "$J_b=0$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -41,7 +41,7 @@
           "array": "panel1_line3",
           "csv": "panel1_line3.csv",
           "label": "$J_b<0$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -50,7 +50,7 @@
           "array": "panel1_line4",
           "csv": "panel1_line4.csv",
           "label": "$J_b>0$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -59,7 +59,7 @@
           "array": "panel1_line5",
           "csv": "panel1_line5.csv",
           "label": "_child7",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -69,19 +69,19 @@
         {
           "array": "panel1_band1_1",
           "csv": "panel1_band1_1.csv",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "alpha": 0.14
         },
         {
           "array": "panel1_band2_1",
           "csv": "panel1_band2_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         },
         {
           "array": "panel1_band3_1",
           "csv": "panel1_band3_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.14
         }
       ],
@@ -117,7 +117,7 @@
           "array": "panel2_line2",
           "csv": "panel2_line2.csv",
           "label": "$J_b=0$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -126,7 +126,7 @@
           "array": "panel2_line3",
           "csv": "panel2_line3.csv",
           "label": "$J_b<0$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -135,7 +135,7 @@
           "array": "panel2_line4",
           "csv": "panel2_line4.csv",
           "label": "$J_b>0$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -144,7 +144,7 @@
           "array": "panel2_line5",
           "csv": "panel2_line5.csv",
           "label": "_child7",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -154,19 +154,19 @@
         {
           "array": "panel2_band1_1",
           "csv": "panel2_band1_1.csv",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "alpha": 0.14
         },
         {
           "array": "panel2_band2_1",
           "csv": "panel2_band2_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         },
         {
           "array": "panel2_band3_1",
           "csv": "panel2_band3_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.14
         }
       ],
@@ -202,7 +202,7 @@
           "array": "panel3_line2",
           "csv": "panel3_line2.csv",
           "label": "$J_b=0$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -211,7 +211,7 @@
           "array": "panel3_line3",
           "csv": "panel3_line3.csv",
           "label": "$J_b<0$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -220,7 +220,7 @@
           "array": "panel3_line4",
           "csv": "panel3_line4.csv",
           "label": "$J_b>0$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -229,7 +229,7 @@
           "array": "panel3_line5",
           "csv": "panel3_line5.csv",
           "label": "_child7",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -239,19 +239,19 @@
         {
           "array": "panel3_band1_1",
           "csv": "panel3_band1_1.csv",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "alpha": 0.14
         },
         {
           "array": "panel3_band2_1",
           "csv": "panel3_band2_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         },
         {
           "array": "panel3_band3_1",
           "csv": "panel3_band3_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.14
         }
       ],
@@ -287,7 +287,7 @@
           "array": "panel4_line2",
           "csv": "panel4_line2.csv",
           "label": "$J_b=0$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -296,7 +296,7 @@
           "array": "panel4_line3",
           "csv": "panel4_line3.csv",
           "label": "$J_b<0$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -305,7 +305,7 @@
           "array": "panel4_line4",
           "csv": "panel4_line4.csv",
           "label": "$J_b>0$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -314,7 +314,7 @@
           "array": "panel4_line5",
           "csv": "panel4_line5.csv",
           "label": "_child7",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -324,19 +324,19 @@
         {
           "array": "panel4_band1_1",
           "csv": "panel4_band1_1.csv",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "alpha": 0.14
         },
         {
           "array": "panel4_band2_1",
           "csv": "panel4_band2_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         },
         {
           "array": "panel4_band3_1",
           "csv": "panel4_band3_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.14
         }
       ],
@@ -372,7 +372,7 @@
           "array": "panel5_line2",
           "csv": "panel5_line2.csv",
           "label": "$J_b=0$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -381,7 +381,7 @@
           "array": "panel5_line3",
           "csv": "panel5_line3.csv",
           "label": "$J_b<0$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -390,7 +390,7 @@
           "array": "panel5_line4",
           "csv": "panel5_line4.csv",
           "label": "$J_b>0$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -399,7 +399,7 @@
           "array": "panel5_line5",
           "csv": "panel5_line5.csv",
           "label": "_child7",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -409,19 +409,19 @@
         {
           "array": "panel5_band1_1",
           "csv": "panel5_band1_1.csv",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "alpha": 0.14
         },
         {
           "array": "panel5_band2_1",
           "csv": "panel5_band2_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         },
         {
           "array": "panel5_band3_1",
           "csv": "panel5_band3_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.14
         }
       ],
@@ -457,7 +457,7 @@
           "array": "panel6_line2",
           "csv": "panel6_line2.csv",
           "label": "$J_b=0$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -466,7 +466,7 @@
           "array": "panel6_line3",
           "csv": "panel6_line3.csv",
           "label": "$J_b<0$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -475,7 +475,7 @@
           "array": "panel6_line4",
           "csv": "panel6_line4.csv",
           "label": "$J_b>0$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -484,7 +484,7 @@
           "array": "panel6_line5",
           "csv": "panel6_line5.csv",
           "label": "_child7",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -494,19 +494,19 @@
         {
           "array": "panel6_band1_1",
           "csv": "panel6_band1_1.csv",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "alpha": 0.14
         },
         {
           "array": "panel6_band2_1",
           "csv": "panel6_band2_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         },
         {
           "array": "panel6_band3_1",
           "csv": "panel6_band3_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.14
         }
       ],
@@ -542,7 +542,7 @@
           "array": "panel7_line2",
           "csv": "panel7_line2.csv",
           "label": "$J_b=0$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -551,7 +551,7 @@
           "array": "panel7_line3",
           "csv": "panel7_line3.csv",
           "label": "$J_b<0$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -560,7 +560,7 @@
           "array": "panel7_line4",
           "csv": "panel7_line4.csv",
           "label": "$J_b>0$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -569,7 +569,7 @@
           "array": "panel7_line5",
           "csv": "panel7_line5.csv",
           "label": "_child7",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -579,19 +579,19 @@
         {
           "array": "panel7_band1_1",
           "csv": "panel7_band1_1.csv",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "alpha": 0.14
         },
         {
           "array": "panel7_band2_1",
           "csv": "panel7_band2_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         },
         {
           "array": "panel7_band3_1",
           "csv": "panel7_band3_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.14
         }
       ],
@@ -627,7 +627,7 @@
           "array": "panel8_line2",
           "csv": "panel8_line2.csv",
           "label": "$J_b=0$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -636,7 +636,7 @@
           "array": "panel8_line3",
           "csv": "panel8_line3.csv",
           "label": "$J_b<0$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -645,7 +645,7 @@
           "array": "panel8_line4",
           "csv": "panel8_line4.csv",
           "label": "$J_b>0$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -654,7 +654,7 @@
           "array": "panel8_line5",
           "csv": "panel8_line5.csv",
           "label": "_child7",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -664,19 +664,19 @@
         {
           "array": "panel8_band1_1",
           "csv": "panel8_band1_1.csv",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "alpha": 0.14
         },
         {
           "array": "panel8_band2_1",
           "csv": "panel8_band2_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         },
         {
           "array": "panel8_band3_1",
           "csv": "panel8_band3_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.14
         }
       ],
@@ -712,7 +712,7 @@
           "array": "panel9_line2",
           "csv": "panel9_line2.csv",
           "label": "$J_b=0$",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -721,7 +721,7 @@
           "array": "panel9_line3",
           "csv": "panel9_line3.csv",
           "label": "$J_b<0$",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -730,7 +730,7 @@
           "array": "panel9_line4",
           "csv": "panel9_line4.csv",
           "label": "$J_b>0$",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-.",
           "marker": "None",
           "coordinates": "data"
@@ -739,7 +739,7 @@
           "array": "panel9_line5",
           "csv": "panel9_line5.csv",
           "label": "_child7",
-          "colour": "#83919b",
+          "colour": "#858d94",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "mixed_axes_data"
@@ -749,19 +749,19 @@
         {
           "array": "panel9_band1_1",
           "csv": "panel9_band1_1.csv",
-          "colour": "#087f8c",
+          "colour": "#004955",
           "alpha": 0.14
         },
         {
           "array": "panel9_band2_1",
           "csv": "panel9_band2_1.csv",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "alpha": 0.14
         },
         {
           "array": "panel9_band3_1",
           "csv": "panel9_band3_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.14
         }
       ],
@@ -777,21 +777,22 @@
     },
     {
       "label": "$J_b=0$",
-      "colour": "#087f8c",
+      "colour": "#004955",
       "linestyle": "-"
     },
     {
       "label": "$J_b<0$",
-      "colour": "#ce6c30",
+      "colour": "#e9a967",
       "linestyle": "--"
     },
     {
       "label": "$J_b>0$",
-      "colour": "#7752a4",
+      "colour": "#8056a8",
       "linestyle": "-."
     }
   ],
   "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
   "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
-  "caption_latex": "Families E--G at $Jt=1$, plotted against separation $r$. {E and F each use forty trajectories per bath condition; G uses 22 for zero hopping and 21 for each nonzero hopping sign.} {(a--c)} {show} excitation-exchange family E: $C_{zz}$, $(C_{xx}+C_{yy})/2$ and staggered $C_{xy}$ from left to right. {(d--f)} {show} transverse-XXZ family F: $C_{zz}$, $C_{yy}$ and staggered $C_{xy}$. {(g--i)} {show} family G: $C_{xx}$, $C_{yy}$ and staggered $C_{yz}$. Every panel compares its family's bathless reference with zero, negative and positive bath hopping; E and F use $J_b=0,\\pm2J$, while G uses $J_b=0,\\pm J$. Bands are one standard error across the bath trajectories."
+  "caption_latex": "Families E--G at $Jt=1$, plotted against separation $r$. {E and F each use forty trajectories per bath condition; G uses 22 for zero hopping and 21 for each nonzero hopping sign.} {(a--c)} {show} excitation-exchange family E: $C_{zz}$, $(C_{xx}+C_{yy})/2$ and staggered $C_{xy}$ from left to right. {(d--f)} {show} transverse-XXZ family F: $C_{zz}$, $C_{yy}$ and staggered $C_{xy}$. {(g--i)} {show} family G: $C_{xx}$, $C_{yy}$ and staggered $C_{yz}$. Every panel compares its family's bathless reference with zero, negative and positive bath hopping; E and F use $J_b=0,\\pm2J$, while G uses $J_b=0,\\pm J$. Bands are one standard error across the bath trajectories.",
+  "presentation_revision": "Approved lightness-separated palette, 2026-10-29. Original scientific markers retained; no additional decorative markers."
 }

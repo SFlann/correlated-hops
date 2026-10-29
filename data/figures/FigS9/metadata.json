@@ -23,7 +23,7 @@
           "array": "panel1_line1",
           "csv": "panel1_line1.csv",
           "label": "With spin 2",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-",
           "marker": "None",
           "coordinates": "data"
@@ -32,7 +32,7 @@
           "array": "panel1_line2",
           "csv": "panel1_line2.csv",
           "label": "Cavity only",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -41,7 +41,7 @@
           "array": "panel1_line3",
           "csv": "panel1_line3.csv",
           "label": "_child3",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "--",
           "marker": "None",
           "coordinates": "data"
@@ -51,7 +51,7 @@
         {
           "array": "panel1_band1_1",
           "csv": "panel1_band1_1.csv",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "alpha": 0.2
         }
       ],
@@ -59,12 +59,12 @@
       "legend": [
         {
           "label": "With spin 2",
-          "colour": "#7752a4",
+          "colour": "#8056a8",
           "linestyle": "-"
         },
         {
           "label": "Cavity only",
-          "colour": "#ce6c30",
+          "colour": "#e9a967",
           "linestyle": "--"
         }
       ]
@@ -73,5 +73,6 @@
   "legend": [],
   "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
   "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
-  "caption_latex": "Passive-relay control for weak-end loss and $J_b=0.25\\omega_c$. {(a):} Endpoint concurrence $\\mathcal C_{13}$ versus $\\omega_ct$ for the full three-spin chain (``With spin 2'') and a two-spin, three-cavity chain in which spin 2 is absent from the start (``Cavity only''). Physical endpoints retain labels 1 and 3, and the middle cavity remains in both models. The main full-chain curve is the cavity reference; its fine dotted curve and pointwise 95\\% band are the HOPS estimate. The passive-relay curve is deterministic. The other parameters are those of main Fig.~1, and no measurement or feedback is applied."
+  "caption_latex": "Passive-relay control for weak-end loss and $J_b=0.25\\omega_c$. {(a):} Endpoint concurrence $\\mathcal C_{13}$ versus $\\omega_ct$ for the full three-spin chain (``With spin 2'') and a two-spin, three-cavity chain in which spin 2 is absent from the start (``Cavity only''). Physical endpoints retain labels 1 and 3, and the middle cavity remains in both models. The main full-chain curve is the cavity reference; its fine dotted curve and pointwise 95\\% band are the HOPS estimate. The passive-relay curve is deterministic. The other parameters are those of main Fig.~1, and no measurement or feedback is applied.",
+  "presentation_revision": "Approved lightness-separated palette, 2026-10-29. Original scientific markers retained; no additional decorative markers."
 }
