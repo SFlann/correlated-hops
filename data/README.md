@@ -32,11 +32,11 @@ import json
 import numpy as np
 from pathlib import Path
 
-folder = Path('data/figures/Fig3')
-metadata = json.loads((folder / 'metadata.json').read_text())
-arrays = np.load(folder / 'arrays.npz', allow_pickle=False)
-panel = metadata['panels'][0]
-curve = arrays[panel['lines'][0]['array']]
+folder = Path("data/figures/Fig3")
+metadata = json.loads((folder / "metadata.json").read_text())
+arrays = np.load(folder / "arrays.npz", allow_pickle=False)
+panel = metadata["panels"][0]
+curve = arrays[panel["lines"][0]["array"]]
 time, correlation = curve.T
 ```
 

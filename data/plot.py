@@ -3,10 +3,11 @@
 import argparse
 import json
 from pathlib import Path
-import numpy as np
+
 import matplotlib.pyplot as plt
-from matplotlib.lines import Line2D
+import numpy as np
 from matplotlib.collections import LineCollection
+from matplotlib.lines import Line2D
 
 
 def plot(figure, output):

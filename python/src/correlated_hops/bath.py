@@ -1,8 +1,11 @@
 """Passive vacuum bath and exact stationary Ornstein--Uhlenbeck sampling."""
 
 from dataclasses import dataclass
+
 import numpy as np
 from scipy.linalg import expm
+
+from ._validation import integer
 
 
 def positive_factor(covariance):
@@ -42,17 +45,19 @@ class Bath:
         object.__setattr__(self, "kappa", kappa)
 
     @property
-    def W(self):
+    def W(self) -> np.ndarray:
         return np.diag(self.kappa / 2) + 1j * self.h
 
-    def kernel(self, time):
+    def kernel(self, time: float) -> np.ndarray:
         """K_ij(t) = <a_i(t) a_j^dagger(0)> for nonnegative time."""
         if not np.isfinite(time) or time < 0:
             raise ValueError("time must be finite and nonnegative")
         return expm(-self.W * time)
 
 
-def stationary_noise(bath, dt, steps, samples, seed=0):
+def stationary_noise(
+    bath: Bath, dt: float, steps: int, samples: int, seed: int | None = 0
+) -> np.ndarray:
     """Return z[time, mode, trajectory], with E[z(t)z(s)^dagger] = K(t-s).
 
     Exact grid samples, including nonuniform losses and complex Hermitian h.
@@ -60,10 +65,10 @@ def stationary_noise(bath, dt, steps, samples, seed=0):
     a single fine path and subsample it; equal seeds on different grids do
     not produce nested paths.
     """
-    if not np.isfinite(dt) or dt <= 0 or int(steps) != steps or steps < 0:
+    if not np.isfinite(dt) or dt <= 0:
         raise ValueError("Invalid noise time grid")
-    if int(samples) != samples or samples < 1:
-        raise ValueError("samples must be a positive integer")
+    steps = integer(steps, "steps", minimum=0)
+    samples = integer(samples, "samples")
     rng = np.random.default_rng(seed)
     modes = len(bath.h)
 

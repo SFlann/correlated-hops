@@ -1,16 +1,17 @@
 import numpy as np
 import pytest
-from scipy.linalg import expm
 from correlated_hops import (
     Bath,
-    Model,
+    concurrence,
+    connected,
+    partial_trace,
     solve,
     spin_chain,
     spin_operators,
     stationary_noise,
 )
-from correlated_hops import connected, concurrence, partial_trace
 from correlated_hops.reference import master_equation
+from scipy.linalg import expm
 
 
 def test_spin_algebra():

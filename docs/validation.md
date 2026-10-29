@@ -21,6 +21,8 @@ converges every physical regime.
   implementation, using a fixed sampling tolerance.
 - Timestep refinement with nested noise paths and larger local hierarchies.
 - Ensemble connected correlations, partial traces and concurrence.
+- Output-grid alignment at small and ordinary time scales, sparse output shapes,
+  integer counts, prescribed-noise ownership and defensive model copies.
 
 ## Julia / ITensor
 
@@ -31,17 +33,31 @@ compression diagnostics and the single-site case. The generator fixture
 includes spin–spin interactions, bath hopping, unequal loss and nonlinear
 coefficients. Its local hierarchy bounds differ between the two modes.
 
+Compression regression tests independently inspect predictor truncation, compare
+reported maxima with an explicit sequence of steps, and verify that sparse
+observations retain the same cumulative diagnostics as observations at every step.
+Parameter and time-grid failure cases are checked separately.
+
 The fixtures use the Python convention in which the last tensor index varies
 fastest. Julia tests explicitly map this ordering rather than relying on
-reshape conventions. All fixture files are small plain CSVs.
+reshape conventions. All fixture files are small plain CSVs. Run
+`python tools/generate_fixtures.py --check` to compare the expected generator
+and density against the current Python implementation. The script reads the
+prescribed noise inputs without changing them; see [fixture provenance](../julia/test/fixtures/README.md).
 
 ## Release checks
 
-Version 0.1.0 was checked locally with Python 3.10, Julia 1.12.6,
-ITensors 0.9.32 and ITensorMPS 0.4.2. The Python suite passed 10 tests and the
-Julia suite passed 13 assertions. Both documented examples were run. GitHub
-Actions repeats the suites, and the plotting-data checksum verification,
-on pushes and pull requests.
+The original 0.1.0 implementation was checked with Python 3.10, Julia 1.12.6,
+ITensors 0.9.32 and ITensorMPS 0.4.2. The hardening pass adds public API
+regressions, bringing the local suites to 35 Python tests and 44 Julia assertions
+on those interpreter/package families. Both the Python physics tests and the
+fixture-generation check also pass against an installed wheel built from the
+source distribution.
+
+GitHub Actions checks Python 3.10 and 3.12, a separate job at the declared
+NumPy/SciPy/Matplotlib/pytest lower bounds, and Julia 1.10 and 1.12. It runs the
+examples, verifies a representative archive replot and checks all data hashes.
+The matrix and installed versions are visible in each workflow's logs.
 
 ## Relationship to the manuscript calculations
 

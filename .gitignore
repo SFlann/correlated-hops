@@ -3,8 +3,12 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 build/
 dist/
 examples/output/
 .DS_Store
 julia/Manifest.toml
+tools/julia/Manifest.toml

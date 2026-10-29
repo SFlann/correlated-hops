@@ -1,8 +1,8 @@
 """Verify the immutable plotting archive; requires only Python's standard library."""
 
-from pathlib import Path
 import hashlib
 import json
+from pathlib import Path
 
 root = Path(__file__).resolve().parent
 manifest = json.loads((root / "manifest.json").read_text())

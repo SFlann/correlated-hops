@@ -1,8 +1,13 @@
 """Dense-system, sparse-hierarchy linear and normalised nonlinear HOPS."""
 
+from collections.abc import Sequence
 from dataclasses import dataclass
 from time import perf_counter
+
 import numpy as np
+from numpy.typing import ArrayLike
+
+from ._validation import integer
 from .bath import Bath, stationary_noise
 from .hierarchy import hierarchy
 
@@ -12,7 +17,7 @@ class Model:
     """H_S and F_i in H_int = sum_i (F_i a_i^dagger + F_i^dagger a_i)."""
 
     hamiltonian: np.ndarray
-    couplings: tuple
+    couplings: tuple[np.ndarray, ...]
     bath: Bath
 
     def __post_init__(self):
@@ -34,12 +39,18 @@ class Model:
 
 @dataclass
 class Result:
+    """Output times, trajectory roots and numerical diagnostics.
+
+    ``roots`` has shape ``(len(times), samples, system_dimension)``. Computing
+    ``density`` averages projectors and does not modify or normalise the roots.
+    """
+
     times: np.ndarray
     roots: np.ndarray  # [output time, trajectory, system basis]
-    diagnostics: dict
+    diagnostics: dict[str, object]
 
     @property
-    def density(self):
+    def density(self) -> np.ndarray:
         """Average root projectors; linear roots are never renormalised here."""
         return (
             np.einsum("tsi,tsj->tij", self.roots, self.roots.conj())
@@ -48,17 +59,17 @@ class Result:
 
 
 def solve(
-    model,
-    initial,
-    times,
+    model: Model,
+    initial: ArrayLike,
+    times: ArrayLike,
     *,
-    dt=0.01,
-    kmax=4,
-    samples=100,
-    seed=0,
-    nonlinear=True,
-    noise=None,
-):
+    dt: float = 0.01,
+    kmax: int | Sequence[int] = 4,
+    samples: int = 100,
+    seed: int | None = 0,
+    nonlinear: bool = True,
+    noise: ArrayLike | None = None,
+) -> Result:
     """Integrate on a uniform internal grid, with RK stages at noise half-steps.
 
     The fourth-degree RK update is applied to the prescribed interpolated
@@ -66,6 +77,13 @@ def solve(
     Validate dt and kmax for the chosen observables. Normalising nonlinear
     roots includes the Girsanov shift and hierarchy response; normalising a
     linear trajectory alone would give the wrong estimator.
+
+    ``initial`` is a normalised system vector. ``times`` starts at zero and
+    contains distinct increasing multiples of ``dt``. Integer counts must be
+    Python or NumPy integers, excluding booleans. Prescribed ``noise`` has
+    shape ``(2 * steps + 1, modes, samples)`` on the half-step grid and is
+    read without modification; when supplied, it replaces seeded sampling.
+    See ``docs/api.md`` for shapes, diagnostics and error behaviour.
     """
     started = perf_counter()
     times = np.asarray(times, float)
@@ -79,12 +97,17 @@ def solve(
         raise ValueError("times must start at zero and increase strictly")
     if not np.all(np.isfinite(times)) or not np.isfinite(dt) or dt <= 0:
         raise ValueError("Invalid integration time grid")
-    if int(samples) != samples or samples < 1:
-        raise ValueError("samples must be a positive integer")
-    steps = int(round(times[-1] / dt))
-    outputs = np.rint(times / dt).astype(int)
-    if not np.allclose(outputs * dt, times, atol=1e-11, rtol=1e-11):
-        raise ValueError("Output times must lie on the internal grid")
+    samples = integer(samples, "samples")
+    with np.errstate(over="ignore"):
+        grid = times / dt
+    if not np.all(np.isfinite(grid)) or np.any(grid >= np.iinfo(np.intp).max // 2):
+        raise ValueError("Too many internal time steps")
+    outputs = np.rint(grid).astype(int)
+    if np.any(np.diff(outputs) <= 0) or not np.allclose(
+        grid, outputs, atol=1e-9, rtol=0
+    ):
+        raise ValueError("Output times must lie on distinct internal grid steps")
+    steps = int(outputs[-1])
     d = len(model.hamiltonian)
     m = len(model.couplings)
     if (
@@ -93,14 +116,10 @@ def solve(
         or not np.isclose(np.linalg.norm(initial), 1)
     ):
         raise ValueError("initial must be a normalised finite system vector")
-    bounds = np.full(m, kmax) if np.isscalar(kmax) else np.asarray(kmax)
-    if (
-        bounds.shape != (m,)
-        or np.any(bounds < 1)
-        or np.any(bounds != bounds.astype(int))
-    ):
-        raise ValueError("kmax must give a positive integer bound per mode")
-    bounds = bounds.astype(int)
+    raw_bounds = [kmax] * m if np.isscalar(kmax) else list(kmax)
+    if len(raw_bounds) != m:
+        raise ValueError("kmax must give one positive integer bound per mode")
+    bounds = np.array([integer(k, "kmax") for k in raw_bounds], dtype=int)
     base, annihilators, occupations = hierarchy(
         model.couplings, model.hamiltonian, model.bath.W, bounds
     )
@@ -183,6 +202,8 @@ def solve(
                     for i, k in enumerate(bounds)
                 ]
             )
+    if len(roots) != len(times):
+        raise RuntimeError("Internal error: output times and stored states disagree")
     return Result(
         times.copy(),
         np.asarray(roots),
@@ -193,6 +214,7 @@ def solve(
             kmax=bounds.tolist(),
             hierarchy_states=nh,
             seed=seed,
+            noise_source="generated" if noise is None else "prescribed",
             elapsed_seconds=perf_counter() - started,
             max_root_norm_correction=max_norm_correction,
             auxiliary_boundary_fractions=boundary,
