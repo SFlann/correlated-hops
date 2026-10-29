@@ -1,0 +1,77 @@
+{
+  "figure": "FigS9",
+  "source_driver": "papers/correlated_hops_correlations_20261009/scripts/local_bath_figures.py",
+  "source_driver_sha256": "5b771a82b339a0e2730458ab501bd57f8511163086c95ddd6d14d9b47cbd8539",
+  "panels": [
+    {
+      "index": 1,
+      "title": "(a) Remove only the middle spin",
+      "xlabel": "$\\omega_ct$",
+      "ylabel": "$\\mathcal{C}_{13}$",
+      "xlim": [
+        0.0,
+        40.0
+      ],
+      "ylim": [
+        -0.004,
+        0.15
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel1_line1",
+          "csv": "panel1_line1.csv",
+          "label": "With spin 2",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line2",
+          "csv": "panel1_line2.csv",
+          "label": "Cavity only",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line3",
+          "csv": "panel1_line3.csv",
+          "label": "_child3",
+          "colour": "#7752a4",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel1_band1_1",
+          "csv": "panel1_band1_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.2
+        }
+      ],
+      "error_segments": [],
+      "legend": [
+        {
+          "label": "With spin 2",
+          "colour": "#7752a4",
+          "linestyle": "-"
+        },
+        {
+          "label": "Cavity only",
+          "colour": "#ce6c30",
+          "linestyle": "--"
+        }
+      ]
+    }
+  ],
+  "legend": [],
+  "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
+  "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
+  "caption_latex": "Passive-relay control for weak-end loss and $J_b=0.25\\omega_c$. {(a):} Endpoint concurrence $\\mathcal C_{13}$ versus $\\omega_ct$ for the full three-spin chain (``With spin 2'') and a two-spin, three-cavity chain in which spin 2 is absent from the start (``Cavity only''). Physical endpoints retain labels 1 and 3, and the middle cavity remains in both models. The main full-chain curve is the cavity reference; its fine dotted curve and pointwise 95\\% band are the HOPS estimate. The passive-relay curve is deterministic. The other parameters are those of main Fig.~1, and no measurement or feedback is applied."
+}

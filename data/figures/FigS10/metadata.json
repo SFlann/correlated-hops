@@ -1,0 +1,139 @@
+{
+  "figure": "FigS10",
+  "source_driver": "papers/correlated_hops_correlations_20261009/scripts/measurement_feedback_figures.py",
+  "source_driver_sha256": "fe09f63a9176ee6b82feabe73c68504176bea2ce88f5f500a1db8e98b4f71d70",
+  "panels": [
+    {
+      "index": 1,
+      "title": "(a) Before readout",
+      "xlabel": "$\\omega_ct$",
+      "ylabel": "$\\mathcal{C}_{13}$",
+      "xlim": [
+        0.0,
+        40.0
+      ],
+      "ylim": [
+        -0.004,
+        0.23
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel1_line1",
+          "csv": "panel1_line1.csv",
+          "label": "Uniform, full",
+          "colour": "#087f8c",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line2",
+          "csv": "panel1_line2.csv",
+          "label": "Weak ends, full",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line3",
+          "csv": "panel1_line3.csv",
+          "label": "Weak ends, approx.",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [],
+      "error_segments": [],
+      "legend": [
+        {
+          "label": "Uniform, full",
+          "colour": "#087f8c",
+          "linestyle": ":"
+        },
+        {
+          "label": "Weak ends, full",
+          "colour": "#7752a4",
+          "linestyle": "-"
+        },
+        {
+          "label": "Weak ends, approx.",
+          "colour": "#ce6c30",
+          "linestyle": "--"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "(b) After $Y_2$ + feedback",
+      "xlabel": "$\\omega_ct$",
+      "ylabel": "$\\mathcal{C}_{13}$",
+      "xlim": [
+        0.0,
+        40.0
+      ],
+      "ylim": [
+        -0.004,
+        0.23
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel2_line1",
+          "csv": "panel2_line1.csv",
+          "label": "Uniform, full",
+          "colour": "#087f8c",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line2",
+          "csv": "panel2_line2.csv",
+          "label": "Weak ends, full",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line3",
+          "csv": "panel2_line3.csv",
+          "label": "Weak ends, approx.",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [],
+      "error_segments": [],
+      "legend": [
+        {
+          "label": "Uniform, full",
+          "colour": "#087f8c",
+          "linestyle": ":"
+        },
+        {
+          "label": "Weak ends, full",
+          "colour": "#7752a4",
+          "linestyle": "-"
+        },
+        {
+          "label": "Weak ends, approx.",
+          "colour": "#ce6c30",
+          "linestyle": "--"
+        }
+      ]
+    }
+  ],
+  "legend": [],
+  "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
+  "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
+  "caption_latex": "Effect of discarding damping couplings between Hamiltonian normal modes at $J_b=0.25\\omega_c$. {(a):} Unread endpoint concurrence $\\mathcal C_{13}$ versus $\\omega_ct$ for the full uniform-loss model, the full weak-end model and the weak-end independent-normal-mode approximation. {(b):} The corresponding corrected concurrence after the terminal $Y_2$ measurement and feedback operation. Every curve uses the explicit-cavity reference solver, so the comparison changes the bath model rather than the numerical method. The approximation keeps only diagonal normal-mode damping and retains the exactly transformed spin couplings."
+}

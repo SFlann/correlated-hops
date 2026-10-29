@@ -1,0 +1,295 @@
+{
+  "figure": "FigS13",
+  "source_driver": "papers/correlated_hops_correlations_20261009/overleaf_final_figures_20261020/build_supplement_refresh.py",
+  "source_driver_sha256": "546789fc2bd25fb619be74419ebde5b283c95e83190f801165b0d89b33a90f30",
+  "panels": [
+    {
+      "index": 1,
+      "title": "Exchange chain",
+      "xlabel": "Site $i$",
+      "ylabel": "$\\langle a_i^\\dagger a_i\\rangle$",
+      "xlim": [
+        0.04999999999999993,
+        20.95
+      ],
+      "ylim": [
+        0.0,
+        1.15
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel1_line1",
+          "csv": "panel1_line1.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line2",
+          "csv": "panel1_line2.csv",
+          "label": "$J_b=-2J$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line3",
+          "csv": "panel1_line3.csv",
+          "label": "$J_b=+2J$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel1_band1_1",
+          "csv": "panel1_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel1_band2_1",
+          "csv": "panel1_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel1_band3_1",
+          "csv": "panel1_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 2,
+      "title": "",
+      "xlabel": "Separation $r$",
+      "ylabel": "$\\overline{\\mathrm{Re}\\langle a_i^\\dagger a_{i+r}\\rangle}$",
+      "xlim": [
+        0.9,
+        3.1
+      ],
+      "ylim": [
+        -0.2,
+        0.2
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel2_line1",
+          "csv": "panel2_line1.csv",
+          "label": "_child0",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "o",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line2",
+          "csv": "panel2_line2.csv",
+          "label": "_child2",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "o",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line3",
+          "csv": "panel2_line3.csv",
+          "label": "_child4",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "o",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel2_band1_1",
+          "csv": "panel2_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel2_band2_1",
+          "csv": "panel2_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel2_band3_1",
+          "csv": "panel2_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 3,
+      "title": "Transverse XXZ chain",
+      "xlabel": "Site $i$",
+      "ylabel": "$\\langle a_i^\\dagger a_i\\rangle$",
+      "xlim": [
+        0.04999999999999993,
+        20.95
+      ],
+      "ylim": [
+        0.0,
+        1.15
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel3_line1",
+          "csv": "panel3_line1.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line2",
+          "csv": "panel3_line2.csv",
+          "label": "$J_b=-2J$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line3",
+          "csv": "panel3_line3.csv",
+          "label": "$J_b=+2J$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel3_band1_1",
+          "csv": "panel3_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel3_band2_1",
+          "csv": "panel3_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel3_band3_1",
+          "csv": "panel3_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 4,
+      "title": "",
+      "xlabel": "Separation $r$",
+      "ylabel": "$\\overline{\\mathrm{Re}\\langle a_i^\\dagger a_{i+r}\\rangle}$",
+      "xlim": [
+        0.9,
+        3.1
+      ],
+      "ylim": [
+        -0.2,
+        0.2
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel4_line1",
+          "csv": "panel4_line1.csv",
+          "label": "_child0",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "o",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line2",
+          "csv": "panel4_line2.csv",
+          "label": "_child2",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "o",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line3",
+          "csv": "panel4_line3.csv",
+          "label": "_child4",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "o",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel4_band1_1",
+          "csv": "panel4_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel4_band2_1",
+          "csv": "panel4_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel4_band3_1",
+          "csv": "panel4_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    }
+  ],
+  "legend": [
+    {
+      "label": "$J_b=0$",
+      "colour": "#087f8c",
+      "linestyle": "-"
+    },
+    {
+      "label": "$J_b=-2J$",
+      "colour": "#ce6c30",
+      "linestyle": "--"
+    },
+    {
+      "label": "$J_b=+2J$",
+      "colour": "#7752a4",
+      "linestyle": "-."
+    }
+  ],
+  "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
+  "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
+  "caption_latex": "Physical bath observables at $Jt=1$ from {thirty trajectories with saved physical auxiliary projections} per condition. {(a):} Site-resolved physical bath population $\\langle a_i^\\dagger a_i\\rangle$ for exchange family E. {(b):} Site-averaged real physical bath coherence $\\overline{\\operatorname{Re}\\langle a_i^\\dagger a_{i+r}\\rangle}$ versus separation for E. {(c):} The site-resolved bath population for transverse-XXZ family F. {(d):} The site-averaged real bath coherence versus separation for F. Each panel compares $J_b=0,-2J,+2J$; bands are one standard error, and coherences are averaged over sites inside each trajectory. These environmental observables are distinct from hierarchy boundary weights."
+}

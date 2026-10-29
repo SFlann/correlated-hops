@@ -1,0 +1,545 @@
+{
+  "figure": "Fig3",
+  "source_driver": "papers/correlated_hops_correlations_20261009/final_sampling_figure_refresh_20261017/drivers/make_feedback_figures.py",
+  "source_driver_sha256": "d53c0683591e2489bb5bb8677a2f2b3920ab16c023014aed6e131e6c231f2869",
+  "panels": [
+    {
+      "index": 1,
+      "title": "(a) Four spins",
+      "xlabel": "$\\omega_c t$",
+      "ylabel": "$G_{zz}^{1,4}$",
+      "xlim": [
+        0.0,
+        40.0
+      ],
+      "ylim": [
+        -0.016,
+        0.1
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel1_line1",
+          "csv": "panel1_line1.csv",
+          "label": "_child1",
+          "colour": "#84929a",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line2",
+          "csv": "panel1_line2.csv",
+          "label": "_child2",
+          "colour": "#84929a",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line3",
+          "csv": "panel1_line3.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line4",
+          "csv": "panel1_line4.csv",
+          "label": "_child5",
+          "colour": "#087f8c",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line5",
+          "csv": "panel1_line5.csv",
+          "label": "_child7",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line6",
+          "csv": "panel1_line6.csv",
+          "label": "_child8",
+          "colour": "#7752a4",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line7",
+          "csv": "panel1_line7.csv",
+          "label": "_child10",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line8",
+          "csv": "panel1_line8.csv",
+          "label": "_child11",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line9",
+          "csv": "panel1_line9.csv",
+          "label": "_child12",
+          "colour": "#28343d",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel1_band1_1",
+          "csv": "panel1_band1_1.csv",
+          "colour": "#84929a",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel1_band2_1",
+          "csv": "panel1_band2_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel1_band3_1",
+          "csv": "panel1_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel1_band4_1",
+          "csv": "panel1_band4_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.12
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 2,
+      "title": "(b) Four spins",
+      "xlabel": "$\\omega_c t$",
+      "ylabel": "$G_{yy}^{1,4}$",
+      "xlim": [
+        0.0,
+        40.0
+      ],
+      "ylim": [
+        -0.14,
+        0.18
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel2_line1",
+          "csv": "panel2_line1.csv",
+          "label": "_child1",
+          "colour": "#84929a",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line2",
+          "csv": "panel2_line2.csv",
+          "label": "_child2",
+          "colour": "#84929a",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line3",
+          "csv": "panel2_line3.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line4",
+          "csv": "panel2_line4.csv",
+          "label": "_child5",
+          "colour": "#087f8c",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line5",
+          "csv": "panel2_line5.csv",
+          "label": "_child7",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line6",
+          "csv": "panel2_line6.csv",
+          "label": "_child8",
+          "colour": "#7752a4",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line7",
+          "csv": "panel2_line7.csv",
+          "label": "_child10",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line8",
+          "csv": "panel2_line8.csv",
+          "label": "_child11",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line9",
+          "csv": "panel2_line9.csv",
+          "label": "_child12",
+          "colour": "#28343d",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel2_band1_1",
+          "csv": "panel2_band1_1.csv",
+          "colour": "#84929a",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel2_band2_1",
+          "csv": "panel2_band2_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel2_band3_1",
+          "csv": "panel2_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel2_band4_1",
+          "csv": "panel2_band4_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.12
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 3,
+      "title": "(c) Five spins",
+      "xlabel": "$\\omega_c t$",
+      "ylabel": "$G_{zz}^{1,5}$",
+      "xlim": [
+        0.0,
+        80.0
+      ],
+      "ylim": [
+        -0.008,
+        0.056
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel3_line1",
+          "csv": "panel3_line1.csv",
+          "label": "_child1",
+          "colour": "#84929a",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line2",
+          "csv": "panel3_line2.csv",
+          "label": "_child2",
+          "colour": "#84929a",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line3",
+          "csv": "panel3_line3.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line4",
+          "csv": "panel3_line4.csv",
+          "label": "_child5",
+          "colour": "#087f8c",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line5",
+          "csv": "panel3_line5.csv",
+          "label": "_child7",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line6",
+          "csv": "panel3_line6.csv",
+          "label": "_child8",
+          "colour": "#7752a4",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line7",
+          "csv": "panel3_line7.csv",
+          "label": "_child10",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line8",
+          "csv": "panel3_line8.csv",
+          "label": "_child11",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line9",
+          "csv": "panel3_line9.csv",
+          "label": "_child12",
+          "colour": "#28343d",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel3_band1_1",
+          "csv": "panel3_band1_1.csv",
+          "colour": "#84929a",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel3_band2_1",
+          "csv": "panel3_band2_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel3_band3_1",
+          "csv": "panel3_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel3_band4_1",
+          "csv": "panel3_band4_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.12
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 4,
+      "title": "(d) Five spins",
+      "xlabel": "$\\omega_c t$",
+      "ylabel": "$G_{yy}^{1,5}$",
+      "xlim": [
+        0.0,
+        80.0
+      ],
+      "ylim": [
+        -0.14,
+        0.18
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel4_line1",
+          "csv": "panel4_line1.csv",
+          "label": "_child1",
+          "colour": "#84929a",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line2",
+          "csv": "panel4_line2.csv",
+          "label": "_child2",
+          "colour": "#84929a",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line3",
+          "csv": "panel4_line3.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line4",
+          "csv": "panel4_line4.csv",
+          "label": "_child5",
+          "colour": "#087f8c",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line5",
+          "csv": "panel4_line5.csv",
+          "label": "_child7",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line6",
+          "csv": "panel4_line6.csv",
+          "label": "_child8",
+          "colour": "#7752a4",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line7",
+          "csv": "panel4_line7.csv",
+          "label": "_child10",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line8",
+          "csv": "panel4_line8.csv",
+          "label": "_child11",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line9",
+          "csv": "panel4_line9.csv",
+          "label": "_child12",
+          "colour": "#28343d",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel4_band1_1",
+          "csv": "panel4_band1_1.csv",
+          "colour": "#84929a",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel4_band2_1",
+          "csv": "panel4_band2_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel4_band3_1",
+          "csv": "panel4_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.12
+        },
+        {
+          "array": "panel4_band4_1",
+          "csv": "panel4_band4_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.12
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    }
+  ],
+  "legend": [
+    {
+      "label": "Uniform, off",
+      "colour": "#84929a",
+      "linestyle": "-"
+    },
+    {
+      "label": "Weak ends, off",
+      "colour": "#7752a4",
+      "linestyle": "-"
+    },
+    {
+      "label": "$J_b/\\omega_c=0$",
+      "colour": "#28343d",
+      "linestyle": "--"
+    },
+    {
+      "label": "Uniform, feedback",
+      "colour": "#087f8c",
+      "linestyle": "-"
+    },
+    {
+      "label": "Weak ends, feedback",
+      "colour": "#ce6c30",
+      "linestyle": "-"
+    }
+  ],
+  "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
+  "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
+  "caption_latex": "\\textbf{Correlations persist across a longer bath network.} {Endpoint $zz$ and $yy$ correlations for four (a,b) and five (c,d) spins}, retaining uniform/weak-end losses and feedback off/on. {(c)} uses a tighter vertical scale to resolve the smaller five-spin signal. Weak-end number losses are $(0.04,0.36,0.36,0.04)\\omega_c$ for four sites and $(0.04,0.92/3,0.92/3,0.92/3,0.04)\\omega_c$ for five; uniform losses are $0.2\\omega_c$ at each site. Site 2 is controlled for $N=4$, and site 3 for $N=5$, with the gain and phase of Fig.~\\ref{fig:feedback3}. Solid curves and pointwise 95\\% bands are HOPS. Dotted four-spin references are finite-cavity master equations. Neither spin endpoint is actuated."
+}

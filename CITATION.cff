@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this software and the accompanying paper when using these methods or data."
+title: "Correlated HOPS: local pure-state hierarchies for communicating environments"
+version: 0.1.0
+type: software
+authors:
+  - family-names: Flannigan
+    given-names: Stuart
+repository-code: "https://github.com/SFlann/correlated-hops"
+license: MIT
+date-released: 2026-10-29

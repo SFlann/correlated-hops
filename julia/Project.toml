@@ -1,0 +1,22 @@
+name = "CorrelatedHOPS"
+uuid = "b380f60e-f392-4e39-9e43-72c068374c93"
+authors = ["Stuart Flannigan"]
+version = "0.1.0"
+
+[deps]
+ITensors = "9136182c-28ba-11e9-034c-db9fb085ebd5"
+ITensorMPS = "0d1a4710-d33b-49a5-8f18-73bdf49b47e2"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[compat]
+ITensors = "0.9"
+ITensorMPS = "0.3, 0.4"
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+
+[targets]
+test = ["Test", "DelimitedFiles"]

@@ -1,0 +1,408 @@
+{
+  "figure": "Fig6",
+  "source_driver": "papers/correlated_hops_correlations_20261009/revision_20261020_figure6_final40/build_local_refresh.py",
+  "source_driver_sha256": "ebe287dd6fb6bcaff7bd7926b249df75eba56e07f56d39bb9d7d1428dd741642",
+  "panels": [
+    {
+      "index": 1,
+      "title": "(a) Transverse",
+      "xlabel": "$r$",
+      "ylabel": "$C_{yy}(r)$",
+      "xlim": [
+        1.7,
+        10.3
+      ],
+      "ylim": [
+        -0.085,
+        0.255
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel1_line1",
+          "csv": "panel1_line1.csv",
+          "label": "_child0",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line2",
+          "csv": "panel1_line2.csv",
+          "label": "_child1",
+          "colour": "#28343d",
+          "linestyle": "None",
+          "marker": "o",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line3",
+          "csv": "panel1_line3.csv",
+          "label": "_child3",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line4",
+          "csv": "panel1_line4.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "None",
+          "marker": "o",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line5",
+          "csv": "panel1_line5.csv",
+          "label": "_child6",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line6",
+          "csv": "panel1_line6.csv",
+          "label": "_child7",
+          "colour": "#ce6c30",
+          "linestyle": "None",
+          "marker": "o",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line7",
+          "csv": "panel1_line7.csv",
+          "label": "_child9",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line8",
+          "csv": "panel1_line8.csv",
+          "label": "_child10",
+          "colour": "#7752a4",
+          "linestyle": "None",
+          "marker": "o",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel1_band1_1",
+          "csv": "panel1_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.13
+        },
+        {
+          "array": "panel1_band2_1",
+          "csv": "panel1_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.13
+        },
+        {
+          "array": "panel1_band3_1",
+          "csv": "panel1_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.13
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 2,
+      "title": "(b) Exchange",
+      "xlabel": "$r$",
+      "ylabel": "$C_{xy}^{\\rm stag}(r)$",
+      "xlim": [
+        1.7,
+        10.3
+      ],
+      "ylim": [
+        -0.045,
+        0.105
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel2_line1",
+          "csv": "panel2_line1.csv",
+          "label": "_child0",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line2",
+          "csv": "panel2_line2.csv",
+          "label": "_child1",
+          "colour": "#28343d",
+          "linestyle": "None",
+          "marker": "o",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line3",
+          "csv": "panel2_line3.csv",
+          "label": "_child3",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line4",
+          "csv": "panel2_line4.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "None",
+          "marker": "o",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line5",
+          "csv": "panel2_line5.csv",
+          "label": "_child6",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line6",
+          "csv": "panel2_line6.csv",
+          "label": "_child7",
+          "colour": "#ce6c30",
+          "linestyle": "None",
+          "marker": "o",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line7",
+          "csv": "panel2_line7.csv",
+          "label": "_child9",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line8",
+          "csv": "panel2_line8.csv",
+          "label": "_child10",
+          "colour": "#7752a4",
+          "linestyle": "None",
+          "marker": "o",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel2_band1_1",
+          "csv": "panel2_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.13
+        },
+        {
+          "array": "panel2_band2_1",
+          "csv": "panel2_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.13
+        },
+        {
+          "array": "panel2_band3_1",
+          "csv": "panel2_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.13
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 3,
+      "title": "(c) $r=3$",
+      "xlabel": "$Jt$",
+      "ylabel": "$C_{yy}(3,t)$",
+      "xlim": [
+        0.0,
+        1.0
+      ],
+      "ylim": [
+        -0.0724806117204651,
+        0.07141648518051465
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel3_line1",
+          "csv": "panel3_line1.csv",
+          "label": "_child0",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line2",
+          "csv": "panel3_line2.csv",
+          "label": "_child2",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line3",
+          "csv": "panel3_line3.csv",
+          "label": "_child4",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line4",
+          "csv": "panel3_line4.csv",
+          "label": "_child6",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel3_band1_1",
+          "csv": "panel3_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.13
+        },
+        {
+          "array": "panel3_band2_1",
+          "csv": "panel3_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.13
+        },
+        {
+          "array": "panel3_band3_1",
+          "csv": "panel3_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.13
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 4,
+      "title": "(d) Local order",
+      "xlabel": "$Jt$",
+      "ylabel": "$m_z$",
+      "xlim": [
+        0.0,
+        1.0
+      ],
+      "ylim": [
+        -0.3969537678796573,
+        1.0665216079942694
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel4_line1",
+          "csv": "panel4_line1.csv",
+          "label": "_child0",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line2",
+          "csv": "panel4_line2.csv",
+          "label": "_child2",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line3",
+          "csv": "panel4_line3.csv",
+          "label": "_child4",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line4",
+          "csv": "panel4_line4.csv",
+          "label": "_child6",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel4_band1_1",
+          "csv": "panel4_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.13
+        },
+        {
+          "array": "panel4_band2_1",
+          "csv": "panel4_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.13
+        },
+        {
+          "array": "panel4_band3_1",
+          "csv": "panel4_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.13
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    }
+  ],
+  "legend": [
+    {
+      "label": "Bathless",
+      "colour": "#28343d",
+      "linestyle": ":"
+    },
+    {
+      "label": "$J_b/J=0$",
+      "colour": "#087f8c",
+      "linestyle": "-"
+    },
+    {
+      "label": "$J_b/J=-2$",
+      "colour": "#ce6c30",
+      "linestyle": "-"
+    },
+    {
+      "label": "$J_b/J=+2$",
+      "colour": "#7752a4",
+      "linestyle": "-"
+    }
+  ],
+  "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
+  "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
+  "caption_latex": "\\textbf{Environmental transport changes many-body correlations.} Twenty-spin nonlinear HOPS--MPS calculations with a $z$-N\\'eel initial state. The transverse XXZ model has $\\Delta=2$, $F_i=gS_i^x$ and $\\omega_c=5J$; the exchange Heisenberg model has $\\Delta=1$, $F_i=gS_i^-$ and zero rotating-frame cavity detuning. Both use $g=2J$, amplitude loss $\\gamma=0.1J$ and $J_b=0,\\pm2J$. {(a,b):} Signed spatial correlation profiles at $Jt=1$. {(c):} Transverse $yy$ correlation at separation three. {(d):} Staggered order for exchange coupling. Every panel retains its bathless control. Bands are pointwise 95\\% normal-approximation intervals."
+}

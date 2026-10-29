@@ -1,0 +1,477 @@
+{
+  "figure": "FigS3",
+  "source_driver": "papers/correlated_hops_correlations_20261009/revision_20261013/mechanism_figures.py",
+  "source_driver_sha256": "5a6f53a36108ee39e63c1468838762f2dfe33d6b2f45b6efbfc55fe5d9d757a4",
+  "panels": [
+    {
+      "index": 1,
+      "title": "(a) Local $xq$",
+      "xlabel": "$\\omega_c t$",
+      "ylabel": "$|\\langle\\sigma_2^x q_2\\rangle_c|$",
+      "xlim": [
+        0.0,
+        40.0
+      ],
+      "ylim": [
+        0.0,
+        0.19623630205019052
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel1_line1",
+          "csv": "panel1_line1.csv",
+          "label": "_child0",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line2",
+          "csv": "panel1_line2.csv",
+          "label": "_child1",
+          "colour": "#7752a4",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line3",
+          "csv": "panel1_line3.csv",
+          "label": "_child2",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line4",
+          "csv": "panel1_line4.csv",
+          "label": "_child3",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line5",
+          "csv": "panel1_line5.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line6",
+          "csv": "panel1_line6.csv",
+          "label": "_child5",
+          "colour": "#087f8c",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 2,
+      "title": "(b) Spin 2, cavity 1",
+      "xlabel": "$\\omega_c t$",
+      "ylabel": "$|\\langle\\sigma_2^y p_1\\rangle_c|$",
+      "xlim": [
+        0.0,
+        40.0
+      ],
+      "ylim": [
+        0.0,
+        0.05028835485638803
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel2_line1",
+          "csv": "panel2_line1.csv",
+          "label": "_child0",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line2",
+          "csv": "panel2_line2.csv",
+          "label": "_child1",
+          "colour": "#7752a4",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line3",
+          "csv": "panel2_line3.csv",
+          "label": "_child2",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line4",
+          "csv": "panel2_line4.csv",
+          "label": "_child3",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line5",
+          "csv": "panel2_line5.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line6",
+          "csv": "panel2_line6.csv",
+          "label": "_child5",
+          "colour": "#087f8c",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 3,
+      "title": "(c) Spin 1, cavity 2",
+      "xlabel": "$\\omega_c t$",
+      "ylabel": "$|\\langle\\sigma_1^y p_2\\rangle_c|$",
+      "xlim": [
+        0.0,
+        40.0
+      ],
+      "ylim": [
+        0.0,
+        0.07508117413443237
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel3_line1",
+          "csv": "panel3_line1.csv",
+          "label": "_child0",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line2",
+          "csv": "panel3_line2.csv",
+          "label": "_child1",
+          "colour": "#7752a4",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line3",
+          "csv": "panel3_line3.csv",
+          "label": "_child2",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line4",
+          "csv": "panel3_line4.csv",
+          "label": "_child3",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line5",
+          "csv": "panel3_line5.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line6",
+          "csv": "panel3_line6.csv",
+          "label": "_child5",
+          "colour": "#087f8c",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 4,
+      "title": "(d) Local $yp$",
+      "xlabel": "$\\omega_c t$",
+      "ylabel": "$|\\langle\\sigma_2^y p_2\\rangle_c|$",
+      "xlim": [
+        0.0,
+        40.0
+      ],
+      "ylim": [
+        0.0,
+        0.13952505485653455
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel4_line1",
+          "csv": "panel4_line1.csv",
+          "label": "_child0",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line2",
+          "csv": "panel4_line2.csv",
+          "label": "_child1",
+          "colour": "#7752a4",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line3",
+          "csv": "panel4_line3.csv",
+          "label": "_child2",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line4",
+          "csv": "panel4_line4.csv",
+          "label": "_child3",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line5",
+          "csv": "panel4_line5.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line6",
+          "csv": "panel4_line6.csv",
+          "label": "_child5",
+          "colour": "#087f8c",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 5,
+      "title": "(e) Local information",
+      "xlabel": "$\\omega_c t$",
+      "ylabel": "$I(\\mathrm{spin}\\ 2:\\mathrm{cavity}\\ 2)$ [bits]",
+      "xlim": [
+        0.0,
+        40.0
+      ],
+      "ylim": [
+        0.0,
+        0.1887392430779486
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel5_line1",
+          "csv": "panel5_line1.csv",
+          "label": "_child0",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel5_line2",
+          "csv": "panel5_line2.csv",
+          "label": "_child1",
+          "colour": "#7752a4",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel5_line3",
+          "csv": "panel5_line3.csv",
+          "label": "_child2",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel5_line4",
+          "csv": "panel5_line4.csv",
+          "label": "_child3",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel5_line5",
+          "csv": "panel5_line5.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel5_line6",
+          "csv": "panel5_line6.csv",
+          "label": "_child5",
+          "colour": "#087f8c",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 6,
+      "title": "(f) Local entanglement",
+      "xlabel": "$\\omega_c t$",
+      "ylabel": "$\\mathcal{N}(\\mathrm{spin}\\ 2:\\mathrm{cavity}\\ 2)$",
+      "xlim": [
+        0.0,
+        40.0
+      ],
+      "ylim": [
+        0.0,
+        0.10891302186147167
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel6_line1",
+          "csv": "panel6_line1.csv",
+          "label": "_child0",
+          "colour": "#7752a4",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel6_line2",
+          "csv": "panel6_line2.csv",
+          "label": "_child1",
+          "colour": "#7752a4",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel6_line3",
+          "csv": "panel6_line3.csv",
+          "label": "_child2",
+          "colour": "#ce6c30",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel6_line4",
+          "csv": "panel6_line4.csv",
+          "label": "_child3",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel6_line5",
+          "csv": "panel6_line5.csv",
+          "label": "_child4",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel6_line6",
+          "csv": "panel6_line6.csv",
+          "label": "_child5",
+          "colour": "#087f8c",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        }
+      ],
+      "bands": [],
+      "error_segments": [],
+      "legend": []
+    }
+  ],
+  "legend": [
+    {
+      "label": "Feedback off",
+      "colour": "#7752a4",
+      "linestyle": "-"
+    },
+    {
+      "label": "Feedback on",
+      "colour": "#ce6c30",
+      "linestyle": "-"
+    },
+    {
+      "label": "Noise only",
+      "colour": "#087f8c",
+      "linestyle": "-"
+    }
+  ],
+  "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
+  "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
+  "caption_latex": "Local and remote spin--cavity correlations in the three-spin weak-end chain. Each panel compares feedback off, feedback on the middle spin, and independent drive noise on that spin. With $q_j=(a_j+a_j^\\dagger)/\\sqrt{2}$ and $p_j=(a_j-a_j^\\dagger)/(i\\sqrt{2})$, the panels show {(a)} local covariance magnitude $|\\langle\\sigma_2^x q_2\\rangle_c|$, {(b)} middle-spin/end-cavity covariance $|\\langle\\sigma_2^y p_1\\rangle_c|$, {(c)} end-spin/middle-cavity covariance $|\\langle\\sigma_1^y p_2\\rangle_c|$, {(d)} local covariance $|\\langle\\sigma_2^y p_2\\rangle_c|$, {(e)} mutual information between spin 2 and cavity 2, in bits, and {(f)} their entanglement negativity. The subscript $c$ denotes subtraction of the product of means; mixed covariances are displayed as magnitudes. {The plots in} {(b--d)} share a vertical scale. Feedback changes the remote pairs without a comparably large sustained increase in local information or entanglement. Solid cap-five and dotted cap-four master-equation curves test the photon cutoff; these deterministic controls are not HOPS and have no sampling bands. The largest cap changes are below $6.0\\times10^{-4}$ for mixed covariances, $3.4\\times10^{-4}$ for negativity and $2.2\\times10^{-4}$ bits for mutual information."
+}

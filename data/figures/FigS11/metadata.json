@@ -1,0 +1,1052 @@
+{
+  "figure": "FigS11",
+  "source_driver": "papers/correlated_hops_correlations_20261009/overleaf_final_figures_20261020/build_supplement_refresh.py",
+  "source_driver_sha256": "546789fc2bd25fb619be74419ebde5b283c95e83190f801165b0d89b33a90f30",
+  "panels": [
+    {
+      "index": 1,
+      "title": "  A: $S^z$, $g/J=2$",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{xx}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.4,
+        0.1
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel1_line1",
+          "csv": "panel1_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line2",
+          "csv": "panel1_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line3",
+          "csv": "panel1_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line4",
+          "csv": "panel1_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel1_line5",
+          "csv": "panel1_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel1_band1_1",
+          "csv": "panel1_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel1_band2_1",
+          "csv": "panel1_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel1_band3_1",
+          "csv": "panel1_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 2,
+      "title": "",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{yy}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.45,
+        0.3
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel2_line1",
+          "csv": "panel2_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line2",
+          "csv": "panel2_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line3",
+          "csv": "panel2_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line4",
+          "csv": "panel2_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel2_line5",
+          "csv": "panel2_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel2_band1_1",
+          "csv": "panel2_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel2_band2_1",
+          "csv": "panel2_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel2_band3_1",
+          "csv": "panel2_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 3,
+      "title": "",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{yz}^{\\rm stag}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.15,
+        0.55
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel3_line1",
+          "csv": "panel3_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line2",
+          "csv": "panel3_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line3",
+          "csv": "panel3_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line4",
+          "csv": "panel3_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel3_line5",
+          "csv": "panel3_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel3_band1_1",
+          "csv": "panel3_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel3_band2_1",
+          "csv": "panel3_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel3_band3_1",
+          "csv": "panel3_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 4,
+      "title": "  B: $S^z$, $g/J=1$",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{xx}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.4,
+        0.1
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel4_line1",
+          "csv": "panel4_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line2",
+          "csv": "panel4_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line3",
+          "csv": "panel4_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line4",
+          "csv": "panel4_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel4_line5",
+          "csv": "panel4_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel4_band1_1",
+          "csv": "panel4_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel4_band2_1",
+          "csv": "panel4_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel4_band3_1",
+          "csv": "panel4_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 5,
+      "title": "",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{yy}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.45,
+        0.3
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel5_line1",
+          "csv": "panel5_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel5_line2",
+          "csv": "panel5_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel5_line3",
+          "csv": "panel5_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel5_line4",
+          "csv": "panel5_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel5_line5",
+          "csv": "panel5_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel5_band1_1",
+          "csv": "panel5_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel5_band2_1",
+          "csv": "panel5_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel5_band3_1",
+          "csv": "panel5_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 6,
+      "title": "",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{yz}^{\\rm stag}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.15,
+        0.55
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel6_line1",
+          "csv": "panel6_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel6_line2",
+          "csv": "panel6_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel6_line3",
+          "csv": "panel6_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel6_line4",
+          "csv": "panel6_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel6_line5",
+          "csv": "panel6_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel6_band1_1",
+          "csv": "panel6_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel6_band2_1",
+          "csv": "panel6_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel6_band3_1",
+          "csv": "panel6_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 7,
+      "title": "  C: $S^z$, $\\gamma/J=0.4$",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{xx}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.4,
+        0.1
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel7_line1",
+          "csv": "panel7_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel7_line2",
+          "csv": "panel7_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel7_line3",
+          "csv": "panel7_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel7_line4",
+          "csv": "panel7_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel7_line5",
+          "csv": "panel7_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel7_band1_1",
+          "csv": "panel7_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel7_band2_1",
+          "csv": "panel7_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel7_band3_1",
+          "csv": "panel7_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 8,
+      "title": "",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{yy}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.45,
+        0.3
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel8_line1",
+          "csv": "panel8_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel8_line2",
+          "csv": "panel8_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel8_line3",
+          "csv": "panel8_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel8_line4",
+          "csv": "panel8_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel8_line5",
+          "csv": "panel8_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel8_band1_1",
+          "csv": "panel8_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel8_band2_1",
+          "csv": "panel8_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel8_band3_1",
+          "csv": "panel8_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 9,
+      "title": "",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{yz}^{\\rm stag}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.15,
+        0.55
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel9_line1",
+          "csv": "panel9_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel9_line2",
+          "csv": "panel9_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel9_line3",
+          "csv": "panel9_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel9_line4",
+          "csv": "panel9_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel9_line5",
+          "csv": "panel9_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel9_band1_1",
+          "csv": "panel9_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel9_band2_1",
+          "csv": "panel9_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel9_band3_1",
+          "csv": "panel9_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 10,
+      "title": "  D: $S^z$, $\\Delta=2$",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{xx}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.4,
+        0.1
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel10_line1",
+          "csv": "panel10_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel10_line2",
+          "csv": "panel10_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel10_line3",
+          "csv": "panel10_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel10_line4",
+          "csv": "panel10_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel10_line5",
+          "csv": "panel10_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel10_band1_1",
+          "csv": "panel10_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel10_band2_1",
+          "csv": "panel10_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel10_band3_1",
+          "csv": "panel10_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 11,
+      "title": "",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{yy}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.45,
+        0.3
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel11_line1",
+          "csv": "panel11_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel11_line2",
+          "csv": "panel11_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel11_line3",
+          "csv": "panel11_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel11_line4",
+          "csv": "panel11_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel11_line5",
+          "csv": "panel11_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel11_band1_1",
+          "csv": "panel11_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel11_band2_1",
+          "csv": "panel11_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel11_band3_1",
+          "csv": "panel11_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    },
+    {
+      "index": 12,
+      "title": "",
+      "xlabel": "Separation $r$",
+      "ylabel": "$C_{yz}^{\\rm stag}$",
+      "xlim": [
+        0.8,
+        8.2
+      ],
+      "ylim": [
+        -0.15,
+        0.55
+      ],
+      "xscale": "linear",
+      "yscale": "linear",
+      "lines": [
+        {
+          "array": "panel12_line1",
+          "csv": "panel12_line1.csv",
+          "label": "Bathless",
+          "colour": "#28343d",
+          "linestyle": ":",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel12_line2",
+          "csv": "panel12_line2.csv",
+          "label": "$J_b=0$",
+          "colour": "#087f8c",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel12_line3",
+          "csv": "panel12_line3.csv",
+          "label": "$J_b<0$",
+          "colour": "#ce6c30",
+          "linestyle": "--",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel12_line4",
+          "csv": "panel12_line4.csv",
+          "label": "$J_b>0$",
+          "colour": "#7752a4",
+          "linestyle": "-.",
+          "marker": "None",
+          "coordinates": "data"
+        },
+        {
+          "array": "panel12_line5",
+          "csv": "panel12_line5.csv",
+          "label": "_child7",
+          "colour": "#83919b",
+          "linestyle": "-",
+          "marker": "None",
+          "coordinates": "mixed_axes_data"
+        }
+      ],
+      "bands": [
+        {
+          "array": "panel12_band1_1",
+          "csv": "panel12_band1_1.csv",
+          "colour": "#087f8c",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel12_band2_1",
+          "csv": "panel12_band2_1.csv",
+          "colour": "#ce6c30",
+          "alpha": 0.14
+        },
+        {
+          "array": "panel12_band3_1",
+          "csv": "panel12_band3_1.csv",
+          "colour": "#7752a4",
+          "alpha": 0.14
+        }
+      ],
+      "error_segments": [],
+      "legend": []
+    }
+  ],
+  "legend": [
+    {
+      "label": "Bathless",
+      "colour": "#28343d",
+      "linestyle": ":"
+    },
+    {
+      "label": "$J_b=0$",
+      "colour": "#087f8c",
+      "linestyle": "-"
+    },
+    {
+      "label": "$J_b<0$",
+      "colour": "#ce6c30",
+      "linestyle": "--"
+    },
+    {
+      "label": "$J_b>0$",
+      "colour": "#7752a4",
+      "linestyle": "-."
+    }
+  ],
+  "uncertainty_note": "Bands and errors are the plotted values. See the figure caption for confidence level and estimator.",
+  "data_note": "Exact numerical artist inputs in plotted units; no values have been digitised from a PDF or recomputed from curves.",
+  "caption_latex": "Longitudinal families A--D at $Jt=1$, plotted against separation $r$. {Each family uses 22, 22 and 21 trajectories for zero, negative and positive hopping, respectively.} {(a--c)} {show} family A, {(d--f)} family B, {(g--i)} family C and {(j--l)} family D. Within each row, the left, middle and right panels show $C_{xx}$, $C_{yy}$ and staggered $C_{yz}$, respectively. Every panel compares its family's bathless reference with $J_b=0$, negative hopping and positive hopping; shading is one standard error for the bath conditions. {Family letters refer to the parameter table.} All separations, including $r=1$, are shown."
+}
