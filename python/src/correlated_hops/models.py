@@ -1,13 +1,16 @@
 """Small spin-chain models; basis |down>, |up>, sites in left-to-right order."""
 
 import numpy as np
+from numpy.typing import ArrayLike
+
+from ._validation import integer
 from .bath import Bath
 from .solver import Model
 
 
-def spin_operators(n):
-    if int(n) != n or n < 1:
-        raise ValueError("n must be a positive integer")
+def spin_operators(n: int) -> dict[str, list[np.ndarray]]:
+    """Dense site operators in the left-to-right ``|down>, |up>`` basis."""
+    n = integer(n, "n")
     sm = np.array([[0, 1], [0, 0]], complex)
     sp = sm.conj().T
     local = dict(
@@ -25,23 +28,24 @@ def spin_operators(n):
 
 
 def spin_chain(
-    n=2,
+    n: int = 2,
     *,
-    omega_spin=0.1,
-    omega_cavity=1.0,
-    g=0.3,
-    counter_rotating=0.25,
-    J=0.0,
-    delta=1.0,
-    Jb=0.25,
-    kappa=0.2,
-    coupling="rabi",
-):
+    omega_spin: float = 0.1,
+    omega_cavity: float = 1.0,
+    g: float = 0.3,
+    counter_rotating: float = 0.25,
+    J: float = 0.0,
+    delta: float = 1.0,
+    Jb: float = 0.25,
+    kappa: ArrayLike = 0.2,
+    coupling: str = "rabi",
+) -> Model:
     """Independent Rabi pairs or an XXZ chain, locally coupled to hopping modes.
 
     coupling='rabi': F_i = g (S_i^- + counter_rotating S_i^+).
     coupling='sx'/'sz': F_i = g S_i^x/z. kappa is a NUMBER loss rate.
     """
+    n = integer(n, "n")
     ops = spin_operators(n)
     H = sum(omega_spin * a for a in ops["sz"])
     for i in range(n - 1):

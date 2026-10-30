@@ -1,11 +1,17 @@
 # Correlated HOPS
 
+[![Tests](https://github.com/SFlann/correlated-hops/actions/workflows/tests.yml/badge.svg)](https://github.com/SFlann/correlated-hops/actions/workflows/tests.yml)
+
 **Stochastic pure-state dynamics for systems coupled to communicating environments.**
 
 A compact research companion to *Correlations carried and controlled by coupled
 non-Markovian environments*, by Stuart Flannigan. The physical system is a set of
 spins; local auxiliary hierarchies retain the memory and transport of eliminated
 cavity modes.
+
+Use it to explore how spins become correlated when their local environments
+exchange excitations and retain memory. The package is designed as a small,
+readable reference implementation with independent numerical checks.
 
 The repository provides:
 
@@ -23,6 +29,8 @@ losses. No normal-mode approximation to the damping matrix is made.
 ## Python: two locally coupled spins
 
 ```sh
+git clone https://github.com/SFlann/correlated-hops.git
+cd correlated-hops
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[plot,test]'
@@ -30,14 +38,28 @@ python examples/python/rabi_pair.py
 pytest
 ```
 
+The example writes `examples/output/rabi_pair.png` and a JSON record of its
+physical parameters, software versions and numerical diagnostics. Solid curves
+are HOPS estimates, shading is pointwise one standard error, and dotted curves
+are independent finite-cutoff master-equation references.
+
+![Two-spin example with sampling uncertainty and independent references](docs/images/rabi_pair.png)
+
 ```python
 import numpy as np
 from correlated_hops import spin_chain, solve, spin_operators, connected
 
 model = spin_chain(2, g=0.3, Jb=0.25, kappa=[0.1, 0.4])
-result = solve(model, [1, 0, 0, 0], np.linspace(0, 1, 11),
-               dt=0.01, kmax=[3, 4], samples=100, seed=17)
-sz = spin_operators(2)['sz']
+result = solve(
+    model,
+    [1, 0, 0, 0],
+    np.linspace(0, 1, 11),
+    dt=0.01,
+    kmax=[3, 4],
+    samples=100,
+    seed=17,
+)
+sz = spin_operators(2)["sz"]
 correlation = connected(result.density, sz[0], sz[1]).real
 ```
 
@@ -58,6 +80,17 @@ dense Hilbert space. The integrator applies four factorised polynomial MPOs
 after a midpoint predictor. See [the numerical conventions](docs/method.md)
 for coefficient updates, truncation and observable estimation.
 
+## Design
+
+- **Dense Python baseline:** sparse hierarchy matrices and dense system vectors
+  keep small-system calculations straightforward to inspect and validate.
+- **Julia tensor representation:** separate spin and hierarchy tensors permit
+  chain calculations without constructing the dense system Hilbert space.
+- **Independent checks:** explicit-cavity master equations test the numerical
+  dynamics; prescribed-noise fixtures compare the two implementations.
+- **Separate data archive:** examples write their own outputs. The manuscript
+  inputs remain immutable and are checked against a SHA-256 manifest.
+
 ## Scope
 
 Version 0.1 implements time-independent spin Hamiltonians coupled to passive,
@@ -72,8 +105,9 @@ simulation campaign, and its examples are not production convergence settings.
 
 ## Data and reproducibility
 
-See [the data guide](data/README.md), [validation](docs/validation.md), and
-[contribution guidance](CONTRIBUTING.md). Figure data are kept separately from
+See the [API guide](docs/api.md), [data guide](data/README.md),
+[validation](docs/validation.md), [contribution guidance](CONTRIBUTING.md) and
+[release checks](docs/releasing.md). Figure data are kept separately from
 solver examples: installing or testing the package never changes manuscript data.
 Connected correlations and concurrence are evaluated from the **ensemble density**,
 not by averaging their nonlinear values on individual stochastic states.

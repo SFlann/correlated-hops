@@ -5,26 +5,43 @@ Increase photon_cutoff to check the reference's own truncation.
 """
 
 import numpy as np
+from numpy.typing import ArrayLike
 from scipy import sparse
 from scipy.sparse.linalg import expm_multiply
 
+from ._validation import integer
+from .solver import Model
 
-def master_equation(model, initial, times, photon_cutoff=3):
+
+def master_equation(
+    model: Model, initial: ArrayLike, times: ArrayLike, photon_cutoff: int = 3
+) -> np.ndarray:
+    """Reduced system densities on an increasing, equally spaced output grid.
+
+    ``photon_cutoff`` is the maximum photon number per mode, with local
+    dimension ``photon_cutoff + 1``. The returned shape is ``(len(times), d, d)``.
+    """
     times = np.asarray(times, float)
     initial = np.asarray(initial, complex)
     if (
-        len(times) < 2
+        times.ndim != 1
+        or len(times) < 2
+        or not np.all(np.isfinite(times))
         or times[0] != 0
+        or np.any(np.diff(times) <= 0)
         or not np.allclose(times, np.linspace(0, times[-1], len(times)))
     ):
         raise ValueError("Reference requires an equally spaced grid starting at zero")
-    if int(photon_cutoff) != photon_cutoff or photon_cutoff < 1:
-        raise ValueError("Invalid photon cutoff")
+    photon_cutoff = integer(photon_cutoff, "photon_cutoff")
     m = len(model.couplings)
-    d = len(initial)
+    d = len(model.hamiltonian)
     q = photon_cutoff + 1
     nb = q**m
-    if d != len(model.hamiltonian) or not np.isclose(np.linalg.norm(initial), 1):
+    if (
+        initial.shape != (d,)
+        or not np.all(np.isfinite(initial))
+        or not np.isclose(np.linalg.norm(initial), 1)
+    ):
         raise ValueError("Invalid initial state")
 
     def kron_all(items):

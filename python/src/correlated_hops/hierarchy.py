@@ -1,6 +1,7 @@
 """Sparse factorially scaled hierarchy with individual local bounds."""
 
 from itertools import product
+
 import numpy as np
 from scipy import sparse
 

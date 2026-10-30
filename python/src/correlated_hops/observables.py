@@ -1,20 +1,26 @@
 """Observables of the ensemble density, including nonlinear diagnostics."""
 
 import numpy as np
+from numpy.typing import ArrayLike
 
 
-def expectation(density, operator):
+def expectation(density: ArrayLike, operator: ArrayLike) -> np.ndarray | np.generic:
+    """Trace of ``density @ operator``, preserving leading density axes."""
     return np.einsum("...ij,ji->...", density, operator)
 
 
-def connected(density, first, second):
+def connected(
+    density: ArrayLike, first: np.ndarray, second: np.ndarray
+) -> np.ndarray | np.generic:
     """<AB> - <A><B>, evaluated AFTER averaging trajectory projectors."""
     return expectation(density, first @ second) - expectation(
         density, first
     ) * expectation(density, second)
 
 
-def partial_trace(density, keep, dimensions):
+def partial_trace(
+    density: ArrayLike, keep: list[int], dimensions: list[int]
+) -> np.ndarray:
     """Keep specified subsystems in their original order; supports leading axes."""
     dims = list(dimensions)
     keep = list(keep)
@@ -35,7 +41,7 @@ def partial_trace(density, keep, dimensions):
     return a.reshape(*leading, d, d)
 
 
-def concurrence(density):
+def concurrence(density: ArrayLike) -> np.ndarray | np.generic:
     """Wootters concurrence of a normalised, positive two-qubit density."""
     rho = np.asarray(density, complex)
     if rho.shape[-2:] != (4, 4):

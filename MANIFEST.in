@@ -1,0 +1,12 @@
+include CHANGELOG.md CITATION.cff CONTRIBUTING.md
+include .JuliaFormatter.toml
+recursive-include requirements *.txt
+recursive-include python/tests *.py
+recursive-include docs *.md *.png
+recursive-include examples *.py *.jl
+recursive-include tools *.py
+include tools/julia/Project.toml
+include julia/Project.toml
+recursive-include julia/src *.jl
+recursive-include julia/test *.jl *.csv *.md
+prune examples/output

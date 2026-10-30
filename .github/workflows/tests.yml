@@ -1,30 +1,95 @@
 name: Tests
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
+concurrency:
+  group: '${{ github.workflow }}-${{ github.ref }}'
+  cancel-in-progress: true
+permissions:
+  contents: read
+env:
+  OPENBLAS_NUM_THREADS: '1'
+  MPLBACKEND: Agg
 jobs:
   python:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
-        python: ['3.10', '3.12']
+        include:
+          - python: '3.10'
+            dependencies: latest
+          - python: '3.12'
+            dependencies: latest
+          - python: '3.10'
+            dependencies: minimum
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '${{ matrix.python }}'
-      - run: python -m pip install -e '.[test]'
+      - name: Install dependencies
+        run: |
+          if [ "${{ matrix.dependencies }}" = minimum ]; then
+            python -m pip install -c requirements/minimum.txt '.[plot,test,dev]'
+          else
+            python -m pip install '.[plot,test,dev]'
+          fi
+      - name: Build source distribution and wheel
+        run: python -m build
+      - name: Install the wheel built from the source distribution
+        run: python -m pip install --force-reinstall --no-deps dist/*.whl
+      - name: Check source archive contents
+        run: |
+          python - <<'PY'
+          import tarfile
+          from pathlib import Path
+          with tarfile.open(next(Path("dist").glob("*.tar.gz"))) as archive:
+              names = {"/".join(name.split("/")[1:]) for name in archive.getnames()}
+          required = {
+              "python/tests/test_api.py", "docs/api.md",
+              "examples/python/rabi_pair.py", "tools/generate_fixtures.py",
+              "julia/Project.toml", "julia/test/fixtures/noise_real.csv",
+          }
+          assert required <= names, f"Missing source release files: {required - names}"
+          PY
+      - run: ruff check .
+      - run: ruff format --check .
       - run: pytest
-        env:
-          OPENBLAS_NUM_THREADS: '1'
+      - run: python tools/generate_fixtures.py --check
       - run: python data/verify.py
-  julia:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: julia-actions/setup-julia@v2
+      - run: python examples/python/rabi_pair.py
+      - run: python data/plot.py Fig3 --output examples/output/Fig3.png
+      - uses: actions/upload-artifact@v7
+        if: matrix.python == '3.12'
         with:
-          version: '1.12'
-      - uses: julia-actions/cache@v2
+          name: python-example-and-distributions
+          path: |
+            examples/output/
+            dist/
+  julia:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        julia: ['1.10', '1.12']
+    steps:
+      - uses: actions/checkout@v7
+      - uses: julia-actions/setup-julia@v3
+        with:
+          version: '${{ matrix.julia }}'
+      - uses: julia-actions/cache@v3
+      - name: Check Julia formatting
+        if: matrix.julia == '1.12'
+        run: |
+          julia --project=tools/julia -e '
+            using Pkg; Pkg.instantiate()
+            using JuliaFormatter
+            @assert format(["julia/src", "julia/test", "examples/julia"]; overwrite=false)
+          '
       - run: julia --project=julia -e 'using Pkg; Pkg.instantiate(); Pkg.test()'
         env:
           JULIA_NUM_THREADS: '1'
           OPENBLAS_NUM_THREADS: '1'
+      - run: julia --project=julia examples/julia/spin_chain.jl
+        env:
+          JULIA_NUM_THREADS: '1'
