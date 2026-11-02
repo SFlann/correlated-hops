@@ -7,6 +7,24 @@ varies fastest in Python. See [the method](method.md) for the equations.
 
 ## Python
 
+The object workflow is `Bath` → `Model` → `Result`. A model owns its physical
+operators and bath; a result owns its output times, trajectory roots and
+diagnostics. The numerical routines have a single implementation: the
+established `solve(model, ...)`, `stationary_noise(bath, ...)` and observable
+functions remain supported alongside these convenience methods.
+
+```python
+from correlated_hops import spin_chain, spin_operators
+
+model = spin_chain(2, g=0.3, Jb=0.25, kappa=[0.1, 0.4])
+result = model.solve([1, 0, 0, 0], [0, 0.5, 1.0], samples=256)
+sz = spin_operators(2)["sz"]
+mean = result.expectation(sz[0])
+correlation = result.connected(*sz)
+entanglement = result.concurrence()
+first_spin = result.partial_trace([0], [2, 2])
+```
+
 `Bath(h, kappa)` accepts a Hermitian bath matrix of shape `(m, m)` and
 nonnegative losses of shape `(m,)`. `Model(hamiltonian, couplings, bath)`
 accepts a Hermitian system matrix of shape `(d, d)` and one coupling matrix
@@ -19,8 +37,8 @@ returns a dictionary of lists of dense site operators. The available keys are
 the builder's defaults and interaction convention are documented in its docstring.
 
 ```python
-result = solve(
-    model, initial, times, dt=0.01, kmax=[3, 4], samples=100, seed=17, nonlinear=True
+result = model.solve(
+    initial, times, dt=0.01, kmax=[3, 4], samples=100, seed=17, nonlinear=True
 )
 ```
 
@@ -48,9 +66,12 @@ fine = solve(model, initial, [0, 0.2, 0.4], dt=0.005, samples=2, noise=z)
 coarse = solve(model, initial, [0, 0.2, 0.4], dt=0.01, samples=2, noise=z[::2])
 ```
 
-`stationary_noise(bath, dt, steps, samples, seed=0)` includes the initial
+`bath.sample(dt, steps, samples, seed=0)` and the equivalent
+`stationary_noise(bath, dt, steps, samples, seed=0)` include the initial
 sample, so its shape is `(steps + 1, m, samples)`. Zero steps are supported.
-Here `dt` is the spacing of the noise samples themselves.
+Here `dt` is the spacing of the noise samples themselves. `bath.kernel(time)`
+returns the full complex matrix at a finite nonnegative lag. Both methods work
+without a system model; see the [standalone noise study](noise.md).
 
 ### Results and diagnostics
 
@@ -67,6 +88,12 @@ Nonlinear roots are normalised. Linear roots remain unnormalised, and their
 ensemble density is **not** divided by its trace. With a finite ensemble that
 trace can differ from one. `noise_source` distinguishes generated and prescribed
 paths; for prescribed noise retain the input array as part of your own run record.
+
+`result.expectation(operator)`, `result.connected(first, second)`,
+`result.partial_trace(keep, dimensions)` and `result.concurrence()` evaluate
+the corresponding functions on the ensemble density. They retain the linear
+solver's unnormalised-estimator convention; concurrence still requires a
+normalised positive density.
 
 `expectation`, `connected`, `partial_trace` and `concurrence` accept leading
 time/batch axes on the density. Evaluate connected correlations and concurrence
@@ -135,6 +162,9 @@ The inputs are read without modification. The discarded weights include
 the predictor and all four polynomial factors. Calling `diagnostics(engine,
 psi, discarded_weights)` directly reports current bond/boundary snapshots
 and the maximum of the supplied weight history.
+
+`bath_kernel(engine, time)` returns the complex local-bath kernel at finite
+nonnegative lag, with system coupling strengths kept separate.
 
 Julia's `stationary_noise(engine, dt, steps, seed=0)` returns an array of
 shape `(n, steps + 1)` for one trajectory. Python and Julia RNGs do not

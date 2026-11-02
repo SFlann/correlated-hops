@@ -126,3 +126,13 @@ end
     @test size(z) == (1, 5)
     @test_throws ArgumentError Engine(2; kappa=[0.1, -0.2])
 end
+
+@testset "Public bath kernel" begin
+    e = Engine(2; omega_cavity=1.0, Jb=0.3, kappa=0.4)
+    t = 0.7
+    expected = exp(-(0.2 + im) * t) * [cos(0.3t) -im*sin(0.3t); -im*sin(0.3t) cos(0.3t)]
+    @test bath_kernel(e, t) ≈ expected
+    @test bath_kernel(e, 0.0) ≈ Matrix{ComplexF64}(I, 2, 2)
+    @test_throws ArgumentError bath_kernel(e, -0.1)
+    @test_throws ArgumentError bath_kernel(e, Inf)
+end

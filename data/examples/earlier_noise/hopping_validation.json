@@ -1,0 +1,43 @@
+{
+  "status": "exact_free_bath_and_one_excitation_JC_reference_illustrations; not_HOPS_trajectory_runs",
+  "units": "frequencies in Omega0, time in 1/Omega0; hbar=1",
+  "free_bath": {
+    "N": 10,
+    "omega_c": 3,
+    "hopping_values": [
+      0.25,
+      0.5,
+      1
+    ],
+    "kappa": 0.1,
+    "initial_photon_probe": "one photon at site 1",
+    "kernel_bath_state": "vacuum"
+  },
+  "jc_example": {
+    "N": 2,
+    "g": 0.5,
+    "J_b": 0.5,
+    "kappa": 0.1,
+    "delta_c": 0,
+    "initial": "qubit 1 excited; qubit 2 ground; both cavities vacuum",
+    "basis": [
+      "qubit1",
+      "qubit2",
+      "mode1",
+      "mode2"
+    ]
+  },
+  "checks": {
+    "open_chain_spectrum_max_error": 8.881784197001252e-16,
+    "free_photon_survival_max_error": 8.881784197001252e-16,
+    "free_kernel_initial_identity_column_error": 3.226585665316861e-16,
+    "free_kernel_vs_expm_max_error": 4.394685008881406e-15,
+    "analytic_dimer_max_error": 2.8185236977198666e-15,
+    "jc_vs_expm_max_error": 1.1685097334179773e-14,
+    "jc_excitation_loss_derivative_residual": 1.0408340855860843e-16,
+    "jc_min_lost_probability": 0.0,
+    "jc_max_loss_decrease_between_samples": 0.0,
+    "jc_qubit2_peak_probability": 0.7802764264282133,
+    "jc_qubit2_peak_time_sampled": 5.6000000000000005
+  }
+}

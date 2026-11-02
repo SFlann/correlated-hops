@@ -1,0 +1,232 @@
+{
+  "model": {
+    "modes": 10,
+    "omega_c": 3.0,
+    "Jb": 0.5,
+    "kappa": 0.1,
+    "dt": 0.1,
+    "steps": 200
+  },
+  "samples": 100000,
+  "batch_size": 512,
+  "seed": 20260921,
+  "seed_scheme": "SeedSequence children; one independent integer seed per batch",
+  "estimator": "mean(z_j(t) * conj(z_1(0))); magnitude AFTER complex averaging",
+  "units": "Absolute error; unit equal-time variance; not relative error along curves",
+  "checks": {
+    "complex_rms_error": 0.003561895629994657,
+    "complex_max_error": 0.00749101874377287,
+    "joint_covariance_max_error": 0.00843518855611679,
+    "pseudocovariance_max": 0.007260477430356414,
+    "mean_max": 0.004251858088822791
+  },
+  "elapsed_seconds": 5.823539250006434,
+  "versions": {
+    "correlated_hops": "0.1.0",
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "checkpoints": [
+    {
+      "samples": 1,
+      "complex_rms_error": 0.29469432863143136
+    },
+    {
+      "samples": 2,
+      "complex_rms_error": 0.2895967192867936
+    },
+    {
+      "samples": 3,
+      "complex_rms_error": 0.3356346738878039
+    },
+    {
+      "samples": 4,
+      "complex_rms_error": 0.6287539973017316
+    },
+    {
+      "samples": 5,
+      "complex_rms_error": 0.4961152247394745
+    },
+    {
+      "samples": 7,
+      "complex_rms_error": 0.44742985422993387
+    },
+    {
+      "samples": 8,
+      "complex_rms_error": 0.3771741854530552
+    },
+    {
+      "samples": 10,
+      "complex_rms_error": 0.37941963245640165
+    },
+    {
+      "samples": 13,
+      "complex_rms_error": 0.32124192436516724
+    },
+    {
+      "samples": 17,
+      "complex_rms_error": 0.2558403053048713
+    },
+    {
+      "samples": 21,
+      "complex_rms_error": 0.2330600136220677
+    },
+    {
+      "samples": 27,
+      "complex_rms_error": 0.25610670627344395
+    },
+    {
+      "samples": 34,
+      "complex_rms_error": 0.21341092429748107
+    },
+    {
+      "samples": 43,
+      "complex_rms_error": 0.2074416359673757
+    },
+    {
+      "samples": 54,
+      "complex_rms_error": 0.19048584213785047
+    },
+    {
+      "samples": 69,
+      "complex_rms_error": 0.16696727776455028
+    },
+    {
+      "samples": 87,
+      "complex_rms_error": 0.1439821051936642
+    },
+    {
+      "samples": 100,
+      "complex_rms_error": 0.13482275427682688
+    },
+    {
+      "samples": 110,
+      "complex_rms_error": 0.11461006273540439
+    },
+    {
+      "samples": 139,
+      "complex_rms_error": 0.0949780920984768
+    },
+    {
+      "samples": 176,
+      "complex_rms_error": 0.07758211197539507
+    },
+    {
+      "samples": 222,
+      "complex_rms_error": 0.06248129328653546
+    },
+    {
+      "samples": 281,
+      "complex_rms_error": 0.06406655378159576
+    },
+    {
+      "samples": 356,
+      "complex_rms_error": 0.060429087027923906
+    },
+    {
+      "samples": 450,
+      "complex_rms_error": 0.05636416486627261
+    },
+    {
+      "samples": 569,
+      "complex_rms_error": 0.04294442887869448
+    },
+    {
+      "samples": 720,
+      "complex_rms_error": 0.03595664644842161
+    },
+    {
+      "samples": 910,
+      "complex_rms_error": 0.030691294382886435
+    },
+    {
+      "samples": 1000,
+      "complex_rms_error": 0.030455956825089427
+    },
+    {
+      "samples": 1151,
+      "complex_rms_error": 0.02889390136978777
+    },
+    {
+      "samples": 1456,
+      "complex_rms_error": 0.025953912676329273
+    },
+    {
+      "samples": 1842,
+      "complex_rms_error": 0.02383619021630513
+    },
+    {
+      "samples": 2330,
+      "complex_rms_error": 0.025183956694663993
+    },
+    {
+      "samples": 2947,
+      "complex_rms_error": 0.023843906276169124
+    },
+    {
+      "samples": 3728,
+      "complex_rms_error": 0.022901041812489777
+    },
+    {
+      "samples": 4715,
+      "complex_rms_error": 0.01934750914452986
+    },
+    {
+      "samples": 5964,
+      "complex_rms_error": 0.015736939752965497
+    },
+    {
+      "samples": 7543,
+      "complex_rms_error": 0.012396469901843142
+    },
+    {
+      "samples": 9541,
+      "complex_rms_error": 0.010527889590544324
+    },
+    {
+      "samples": 10000,
+      "complex_rms_error": 0.010454813272788108
+    },
+    {
+      "samples": 12068,
+      "complex_rms_error": 0.009212276138585131
+    },
+    {
+      "samples": 15264,
+      "complex_rms_error": 0.008887199212776585
+    },
+    {
+      "samples": 19307,
+      "complex_rms_error": 0.007113969740369744
+    },
+    {
+      "samples": 24421,
+      "complex_rms_error": 0.006251617581550005
+    },
+    {
+      "samples": 30888,
+      "complex_rms_error": 0.005572624085889616
+    },
+    {
+      "samples": 39069,
+      "complex_rms_error": 0.004750159386084797
+    },
+    {
+      "samples": 49417,
+      "complex_rms_error": 0.0046613583789619556
+    },
+    {
+      "samples": 62506,
+      "complex_rms_error": 0.004378123675982357
+    },
+    {
+      "samples": 79060,
+      "complex_rms_error": 0.0039786483802432635
+    },
+    {
+      "samples": 100000,
+      "complex_rms_error": 0.003561895629994657
+    }
+  ]
+}

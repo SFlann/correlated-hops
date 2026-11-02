@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "scope": "Example and historical-note assets; separate from immutable manuscript archive",
+  "files": {
+    "docs/studies/correlated_hops_note.pdf": {
+      "source": "output/pdf/correlated_hops_note/correlated_hops.pdf",
+      "sha256": "e69610e9d316f43163b143887d40100f068e53af8b67af0c684bb4ada8c65ecb",
+      "bytes": 697253
+    },
+    "docs/images/note_excitation_flow.png": {
+      "source": "figures/two_qubit_nonlinear_hops_extended_flow_comparison.png",
+      "sha256": "6677914c940055bc3e89a141fea2d7f99e06618a812e7de36e70ea0942acea11",
+      "bytes": 421550
+    },
+    "docs/images/note_jc_vs_rabi.png": {
+      "source": "figures/two_qubit_nonlinear_hops_jc_vs_rabi.png",
+      "sha256": "baf791dbb999feaada1b2d26c90eb489a241e26e561caf8d95574d02792dbeaa",
+      "bytes": 337115
+    },
+    "docs/images/note_photon_observables.png": {
+      "source": "figures/two_qubit_nonlinear_hops_photon_observables.png",
+      "sha256": "16fa5950bf053202e5f96fa914d451c245ac51887813fb662be8677803ee22d5",
+      "bytes": 366314
+    },
+    "docs/images/note_photon_correlations.png": {
+      "source": "figures/two_qubit_nonlinear_hops_photon_correlations.png",
+      "sha256": "8066d70f624bae9ce8442a8ddc3281a395503dd2f3623e6df3e3eb9fad3b1be2",
+      "bytes": 282526
+    },
+    "docs/images/note_system_mode_correlations.png": {
+      "source": "figures/two_qubit_nonlinear_hops_system_mode_correlations.png",
+      "sha256": "eb6e74a4363a8ad581f9ec0b81d470eb0590d3d285791fadaa090a732745d915",
+      "bytes": 451484
+    },
+    "docs/images/hopping_photon_propagation.png": {
+      "source": "figures/hopping_photon_propagation.png",
+      "sha256": "eac3f97cfd500a628e19aa00d9aeba72e81e1b169288b567208130a92e43f561",
+      "bytes": 597009
+    },
+    "data/examples/earlier_note/dynamics.npz": {
+      "source": "results/two_qubit_damped_modes/nonlinear/dynamics.npz",
+      "sha256": "c737abb4093578c36d356106d7487cfe6eb4e9b3df617a663e3a79c2dfc4548b",
+      "bytes": 1830067
+    },
+    "data/examples/earlier_note/metrics.json": {
+      "source": "results/two_qubit_damped_modes/nonlinear/metrics.json",
+      "sha256": "d834abfce094e0d620b5b118c1e239c8f47996f24af575859e7611be38c3bd28",
+      "bytes": 3523
+    },
+    "data/examples/earlier_note/extended_dynamics.npz": {
+      "source": "results/two_qubit_damped_modes/nonlinear_extended/dynamics.npz",
+      "sha256": "1a8ab16d0dd50eb8cce767f199f78613f0d7ba798fbc21ad990a7796b5aa9613",
+      "bytes": 1809789
+    },
+    "data/examples/earlier_note/extended_metrics.json": {
+      "source": "results/two_qubit_damped_modes/nonlinear_extended/metrics.json",
+      "sha256": "b999e9558dea7b5b85e549c0c4b4285098f35fd53345625112d219eb2b7b54e7",
+      "bytes": 3709
+    },
+    "docs/media/noise_convergence_original.mp4": {
+      "source": "videos/noise_convergence.mp4",
+      "sha256": "5b5ee3cfc7092c3179ad61a868431ae893535afd8f35239722c7514fc2b35886",
+      "bytes": 6025990
+    },
+    "data/examples/earlier_noise/noise_convergence.npz": {
+      "source": "results/noise_convergence.npz",
+      "sha256": "7f3be8d9a89d1a4566bf61ed877bb6e6ac634f7c8b2da265638337d00463e7d4",
+      "bytes": 1997293
+    },
+    "data/examples/earlier_noise/validation.json": {
+      "source": "results/noise_convergence_validation.json",
+      "sha256": "9724c504b85636b3961a25ef9a840a13423e044b9d1387343bd0ec9533917512",
+      "bytes": 8284
+    },
+    "data/examples/earlier_noise/hopping_propagation.npz": {
+      "source": "results/hopping_propagation.npz",
+      "sha256": "0a67c0ac2d4d8618706ba5d246f23aa9ff0bb8106ce6c7a50ec0e11174c39a2c",
+      "bytes": 623483
+    },
+    "data/examples/earlier_noise/hopping_validation.json": {
+      "source": "results/hopping_propagation_validation.json",
+      "sha256": "bf077b58458c1f229eb91c372378ce4b0dcce7f88a1ac4af926c0627ef95a0c9",
+      "bytes": 1285
+    },
+    "docs/images/rabi_pair_original.png": {
+      "source": "studies/readme_pair_20261102/original/rabi_pair.png",
+      "sha256": "83cbc66e52565c846fefef4544c48a9115380ee2efd7d125c86fc88c521a6200",
+      "bytes": 65279
+    },
+    "data/examples/original_readme/rabi_pair.py": {
+      "source": "studies/readme_pair_20261102/original/rabi_pair.py",
+      "sha256": "4c828e7ca359b1769d4fdefa30a557b8fc04cc48bf229619f02c485c05d4530d",
+      "bytes": 4078
+    },
+    "data/examples/original_readme/rabi_pair.json": {
+      "source": "studies/readme_pair_20261102/original/rabi_pair.json",
+      "sha256": "20ef8b0cb9670ae50fc8fa31042eec23ef8e0ae3720b888158fbf0a748dcec67",
+      "bytes": 9546
+    },
+    "data/examples/original_readme/extension.json": {
+      "source": "studies/readme_pair_20261102/original_extension.json",
+      "sha256": "50ba726977182b790a2930b6f109c10c5d7965e0787089a71d63ba10fb1c5633",
+      "bytes": 341
+    },
+    "docs/images/noise_convergence.gif": {
+      "source": "studies/readme_pair_20261102/noise/noise_convergence.gif",
+      "sha256": "858710b9d3b071c083e7da2faaaa87d3892f0bffff1231b8d877bc923d38c541",
+      "bytes": 1008946
+    },
+    "docs/images/noise_convergence_panels.png": {
+      "source": "studies/readme_pair_20261102/noise/noise_convergence_panels.png",
+      "sha256": "f297c12acadb52e52e1998b8ea98c593134f49fdc2ee0e2d65b0ab9acf0ca1dc",
+      "bytes": 271919
+    },
+    "data/examples/package_noise/noise_convergence.json": {
+      "source": "studies/readme_pair_20261102/noise/noise_convergence.json",
+      "sha256": "9d4a506655b3fd6d30068f9d5de8235039ac73b2bed6671f6c7337004e0cb8bb",
+      "bytes": 4998
+    },
+    "data/examples/package_noise/noise_convergence.npz": {
+      "source": "studies/readme_pair_20261102/noise/noise_convergence.npz",
+      "sha256": "c14cb799a33edd5f3b6dbb537ceda436e5e6db6cf4ef00190fff87d90e45101f",
+      "bytes": 653210
+    },
+    "docs/images/rabi_pair.png": {
+      "source": "studies/readme_pair_20261102/long_time/rabi_pair.png",
+      "sha256": "a4e9615b5feac50884562663a5586a8b0803f6445d88a0e8911cb6dfc62bf566",
+      "bytes": 86916
+    },
+    "data/examples/package_pair/rabi_pair.npz": {
+      "source": "studies/readme_pair_20261102/long_time/rabi_pair.npz",
+      "sha256": "33bd51c14fe2668d184bb9b2af2e390fe01fe36b8431adf2708d386376cf098e",
+      "bytes": 763049
+    },
+    "data/examples/package_pair/rabi_pair.json": {
+      "source": "studies/readme_pair_20261102/long_time/rabi_pair.json",
+      "sha256": "fe7da6640b751770bfcbd38da4b34cea3cf2bd016b70bc2923c8ed3ab54bb274",
+      "bytes": 413988
+    }
+  },
+  "reproduction_sources": {
+    "examples/python/rabi_pair.py": "a89b4c652b952eb120938bd8283e2e630560824e363de959926e1056e30b713e",
+    "examples/python/noise_convergence.py": "5b244dbdd6dc29e19930a3dca6966f2610de425559fc664ff7f383ac4a4c9eb9"
+  }
+}

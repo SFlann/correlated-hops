@@ -49,7 +49,7 @@ prescribed noise inputs without changing them; see [fixture provenance](../julia
 
 The original 0.1.0 implementation was checked with Python 3.10, Julia 1.12.6,
 ITensors 0.9.32 and ITensorMPS 0.4.2. The hardening pass adds public API
-regressions, bringing the local suites to 35 Python tests and 44 Julia assertions
+regressions, bringing the local suites to 39 Python tests and 48 Julia assertions
 on those interpreter/package families. Both the Python physics tests and the
 fixture-generation check also pass against an installed wheel built from the
 source distribution.
@@ -58,6 +58,41 @@ GitHub Actions checks Python 3.10 and 3.12, a separate job at the declared
 NumPy/SciPy/Matplotlib/pytest lower bounds, and Julia 1.10 and 1.12. It runs the
 examples, verifies a representative archive replot and checks all data hashes.
 The matrix and installed versions are visible in each workflow's logs.
+
+## README examples checked on 2 November 2026
+
+The extended first plot preserves every physical parameter and the preparation
+of the original short example, increases the duration from 2 to 24, and uses
+4,096 independent trajectories per hopping value in 16 fixed batches. Its
+pointwise 95% intervals resample those independent batches and evaluate the
+nonlinear observables only after density averaging. They are not simultaneous
+confidence bands or rigorous coverage guarantees near the concurrence boundary.
+
+For $J_b=0.25$, the maximum HOPS–reference difference is $2.06\times10^{-4}$
+in $G_{zz}$ and 0.00215 in concurrence. The reference maxima are 0.02837 and
+0.25602. At fixed physical parameters, raising the reference photon cutoff
+from 4 to 6 changes these observables by at most $3.2\times10^{-7}$.
+A 64-path nested-noise comparison of timestep 0.01 with 0.005 changes them
+by at most $1.6\times10^{-6}$ and $3.0\times10^{-5}$, respectively;
+raising both local hierarchy bounds from 4 to 6 changes them by less than
+$3.4\times10^{-7}$. These are finite numerical checks for this example.
+
+The full run, including both controls and numerical checks, took 422 seconds
+on the measured host, with one compute thread and a peak child RSS of 0.42 GiB.
+Runtime is a measurement, not a guarantee for another machine.
+[Saved arrays and per-batch records](../data/examples/README.md) retain the
+physical parameters, seeds, sample counts, numerical checks and software versions.
+
+The separate noise example samples 100,000 histories using the public API and
+checks complex covariance, nonzero time origins, pseudocovariance and mean.
+Its complex RMS error is 0.00356, compared with the $1/\sqrt{N}$ scale 0.00316.
+The measured sampling-and-rendering run took 19 seconds and used 0.29 GiB
+peak child RSS. The [noise guide](noise.md) explains the estimator and its
+relationship to the archived September animation.
+
+CI runs short examples to check execution and output generation. The published
+README assets come from the full runs above. Their checksums are verified by
+`python tools/verify_example_assets.py`; the manuscript manifest is separate.
 
 ## Relationship to the manuscript calculations
 

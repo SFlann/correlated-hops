@@ -9,7 +9,9 @@ ruff format --check .
 pytest
 python tools/generate_fixtures.py --check
 python data/verify.py
-python examples/python/rabi_pair.py
+python tools/verify_example_assets.py
+python examples/python/rabi_pair.py --validate
+python examples/python/noise_convergence.py
 python data/plot.py Fig3 --output examples/output/Fig3.png
 python -m build
 julia --project=julia -e 'using Pkg; Pkg.instantiate(); Pkg.test()'

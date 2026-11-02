@@ -1,0 +1,380 @@
+{
+  "model": {
+    "modes": 10,
+    "omega_c": 3.0,
+    "J_b": 0.5,
+    "kappa_photon_number_loss": 0.1,
+    "g": 1,
+    "dt": 0.1,
+    "open_chain": true,
+    "seed": 20260921,
+    "batch_size": 1024
+  },
+  "independent_noise_histories": 100000,
+  "real_standard_normal_draws_per_history": 4020,
+  "total_real_standard_normal_draws": 402000000,
+  "estimator": "mean_r(z_j^(r)(tau) * conj(z_1^(r)(0))); magnitude AFTER averaging",
+  "error_units": "absolute, with alpha_11(0)=1; NOT relative to each curve",
+  "joint_covariance_check": {
+    "times": [
+      0.0,
+      2.0,
+      5.0,
+      10.0,
+      20.0
+    ],
+    "sites_one_based": [
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  "scope": "Reference Gaussian noise verification; not a HOPS dynamics run.",
+  "notes": [
+    "Every snapshot is a nested prefix of the same ensemble.",
+    "No fitted curves, smoothing, rescaling or selection of random seeds.",
+    "The per-history process is exact on the grid; Monte Carlo error remains.",
+    "Convergence is not monotone; the N^-1/2 guide is a statistical scale.",
+    "Unit variance stationary initial draws are essential with damping."
+  ],
+  "checkpoints": [
+    {
+      "N": 1,
+      "complex_rms_error": 1.2908194270130167
+    },
+    {
+      "N": 2,
+      "complex_rms_error": 0.6715651665518996
+    },
+    {
+      "N": 3,
+      "complex_rms_error": 0.45661866870544005
+    },
+    {
+      "N": 4,
+      "complex_rms_error": 0.4458892795302844
+    },
+    {
+      "N": 5,
+      "complex_rms_error": 0.39365268640677076
+    },
+    {
+      "N": 6,
+      "complex_rms_error": 0.3474833624152951
+    },
+    {
+      "N": 7,
+      "complex_rms_error": 0.3330718283472878
+    },
+    {
+      "N": 8,
+      "complex_rms_error": 0.34228084160248656
+    },
+    {
+      "N": 9,
+      "complex_rms_error": 0.32283267270020694
+    },
+    {
+      "N": 10,
+      "complex_rms_error": 0.34611390997092484
+    },
+    {
+      "N": 12,
+      "complex_rms_error": 0.27746330938956204
+    },
+    {
+      "N": 14,
+      "complex_rms_error": 0.22583498032102456
+    },
+    {
+      "N": 16,
+      "complex_rms_error": 0.2004711856138397
+    },
+    {
+      "N": 18,
+      "complex_rms_error": 0.19166678255648806
+    },
+    {
+      "N": 20,
+      "complex_rms_error": 0.17046872422171946
+    },
+    {
+      "N": 23,
+      "complex_rms_error": 0.1539903190989842
+    },
+    {
+      "N": 27,
+      "complex_rms_error": 0.13360989208783464
+    },
+    {
+      "N": 31,
+      "complex_rms_error": 0.13168434169630888
+    },
+    {
+      "N": 35,
+      "complex_rms_error": 0.1408710439137385
+    },
+    {
+      "N": 40,
+      "complex_rms_error": 0.1407745289853757
+    },
+    {
+      "N": 46,
+      "complex_rms_error": 0.14635771823865434
+    },
+    {
+      "N": 53,
+      "complex_rms_error": 0.14466757264982222
+    },
+    {
+      "N": 61,
+      "complex_rms_error": 0.13654388258093933
+    },
+    {
+      "N": 70,
+      "complex_rms_error": 0.1190775175638851
+    },
+    {
+      "N": 80,
+      "complex_rms_error": 0.11948842201259068
+    },
+    {
+      "N": 92,
+      "complex_rms_error": 0.10571606191875017
+    },
+    {
+      "N": 100,
+      "complex_rms_error": 0.10017681939748686
+    },
+    {
+      "N": 106,
+      "complex_rms_error": 0.09969511526959404
+    },
+    {
+      "N": 121,
+      "complex_rms_error": 0.083889206404926
+    },
+    {
+      "N": 139,
+      "complex_rms_error": 0.0905594533795291
+    },
+    {
+      "N": 159,
+      "complex_rms_error": 0.08503576599590805
+    },
+    {
+      "N": 183,
+      "complex_rms_error": 0.07640238914622656
+    },
+    {
+      "N": 210,
+      "complex_rms_error": 0.07616978214401274
+    },
+    {
+      "N": 240,
+      "complex_rms_error": 0.07258070006261134
+    },
+    {
+      "N": 276,
+      "complex_rms_error": 0.06607985791099732
+    },
+    {
+      "N": 316,
+      "complex_rms_error": 0.061887520232787076
+    },
+    {
+      "N": 363,
+      "complex_rms_error": 0.057189433656575396
+    },
+    {
+      "N": 416,
+      "complex_rms_error": 0.05345414112704649
+    },
+    {
+      "N": 477,
+      "complex_rms_error": 0.047149050632932225
+    },
+    {
+      "N": 547,
+      "complex_rms_error": 0.04155953707760132
+    },
+    {
+      "N": 628,
+      "complex_rms_error": 0.03142192844080034
+    },
+    {
+      "N": 720,
+      "complex_rms_error": 0.03066723443725851
+    },
+    {
+      "N": 825,
+      "complex_rms_error": 0.03223946921866002
+    },
+    {
+      "N": 947,
+      "complex_rms_error": 0.032589672019791495
+    },
+    {
+      "N": 1000,
+      "complex_rms_error": 0.032534412748990944
+    },
+    {
+      "N": 1086,
+      "complex_rms_error": 0.03237479908924537
+    },
+    {
+      "N": 1245,
+      "complex_rms_error": 0.030835995628251376
+    },
+    {
+      "N": 1428,
+      "complex_rms_error": 0.02928486357037891
+    },
+    {
+      "N": 1638,
+      "complex_rms_error": 0.02592354919969201
+    },
+    {
+      "N": 1878,
+      "complex_rms_error": 0.024834383104137485
+    },
+    {
+      "N": 2154,
+      "complex_rms_error": 0.025426640010082716
+    },
+    {
+      "N": 2471,
+      "complex_rms_error": 0.022655813848372508
+    },
+    {
+      "N": 2834,
+      "complex_rms_error": 0.022319909879724462
+    },
+    {
+      "N": 3250,
+      "complex_rms_error": 0.020369584955932562
+    },
+    {
+      "N": 3728,
+      "complex_rms_error": 0.018365306713372276
+    },
+    {
+      "N": 4275,
+      "complex_rms_error": 0.017986106449589066
+    },
+    {
+      "N": 4903,
+      "complex_rms_error": 0.015917088168110462
+    },
+    {
+      "N": 5623,
+      "complex_rms_error": 0.015309620863895007
+    },
+    {
+      "N": 6449,
+      "complex_rms_error": 0.01528415116095218
+    },
+    {
+      "N": 7397,
+      "complex_rms_error": 0.01380612065995659
+    },
+    {
+      "N": 8483,
+      "complex_rms_error": 0.013805023787699211
+    },
+    {
+      "N": 9730,
+      "complex_rms_error": 0.012312289478238337
+    },
+    {
+      "N": 10000,
+      "complex_rms_error": 0.012483206169575595
+    },
+    {
+      "N": 11159,
+      "complex_rms_error": 0.011700464955847272
+    },
+    {
+      "N": 12798,
+      "complex_rms_error": 0.00985298391093699
+    },
+    {
+      "N": 14678,
+      "complex_rms_error": 0.009772563361007774
+    },
+    {
+      "N": 16834,
+      "complex_rms_error": 0.009318516252838237
+    },
+    {
+      "N": 19307,
+      "complex_rms_error": 0.008279886339684938
+    },
+    {
+      "N": 22143,
+      "complex_rms_error": 0.007244532866899875
+    },
+    {
+      "N": 25396,
+      "complex_rms_error": 0.006838776507525695
+    },
+    {
+      "N": 29126,
+      "complex_rms_error": 0.006556581032964121
+    },
+    {
+      "N": 33405,
+      "complex_rms_error": 0.007382162607975293
+    },
+    {
+      "N": 38312,
+      "complex_rms_error": 0.006733544970114214
+    },
+    {
+      "N": 43940,
+      "complex_rms_error": 0.005972533230367355
+    },
+    {
+      "N": 50394,
+      "complex_rms_error": 0.005176422872306995
+    },
+    {
+      "N": 57797,
+      "complex_rms_error": 0.00441301163397882
+    },
+    {
+      "N": 66287,
+      "complex_rms_error": 0.003911792325257761
+    },
+    {
+      "N": 76024,
+      "complex_rms_error": 0.0034404485450125017
+    },
+    {
+      "N": 87192,
+      "complex_rms_error": 0.0033755905999518876
+    },
+    {
+      "N": 100000,
+      "complex_rms_error": 0.0026979904216553902
+    }
+  ],
+  "checks": {
+    "exact_target_vs_original_plot_max_abs_error": 4.490738070803089e-15,
+    "mode_formula_vs_dense_expm_max_abs_error": 4.482129358180398e-15,
+    "mode_transition_vs_existing_sampler_max_abs_error": 6.280369834735101e-16,
+    "innovation_covariance_vs_existing_sampler_max_abs_error": 1.5092094240998222e-16,
+    "stationarity_identity_max_abs_error": 4.020858250788616e-18,
+    "final_complex_kernel_rms_abs_error": 0.0026979904216553902,
+    "final_complex_kernel_max_abs_error": 0.005486376936324182,
+    "final_magnitude_rms_abs_error": 0.002197439668516235,
+    "joint_covariance_rms_abs_error": 0.002855816953461,
+    "joint_covariance_max_abs_error": 0.007837755039153153,
+    "pseudocovariance_max_abs_value": 0.00971813325150083,
+    "mean_max_abs_value": 0.005460631348685329,
+    "expected_complex_kernel_rms_scale": 0.003162277660168379,
+    "early_error_N_1": 1.2908194270130167,
+    "late_log_log_error_slope_descriptive_only": -0.48343639747535716
+  }
+}
