@@ -1,0 +1,79 @@
+{
+  "parameters": {
+    "qubit_frequency": 1.0,
+    "cavity_frequency": 1.0,
+    "g": 0.3,
+    "bath_hopping": 0.4,
+    "kappa": 0.1,
+    "t_end": 12.0,
+    "output_dt": 0.04
+  },
+  "hops": {
+    "dt": 0.02,
+    "depth": 7,
+    "batches": 8,
+    "trajectories_per_batch": 512,
+    "seed": 76123
+  },
+  "photon_dimensions": {
+    "jaynes_cummings": 2,
+    "quantum_rabi": 8
+  },
+  "method": "nonlinear HOPS (Girsanov), not nuHOPS",
+  "photon_estimator": "physical Husimi coordinate q=z+shift*, with OU control variate",
+  "models": {
+    "jaynes_cummings": {
+      "model": "jaynes_cummings",
+      "max_reduced_trace_distance": 0.004044089938458787,
+      "final_reduced_trace_distance": 0.0016181759502194365,
+      "max_photon_population_error": 0.018014924301340024,
+      "max_inter_mode_coherence_error": 0.013064490635790306,
+      "max_anomalous_correlation_error": 0.01752711937579199,
+      "max_joint_photon_number_error": 0.04416970317307199,
+      "max_system_photon_number_error": 0.03697173794505871,
+      "max_interaction_coherence_error": 0.014635063082037537,
+      "max_95percent_halfwidth_q2": 0.012974344978151262,
+      "max_95percent_halfwidth_photon_population": 0.02098670117516301,
+      "max_95percent_halfwidth_hopping_current": 0.015788194499849733,
+      "max_95percent_halfwidth_system_photon_number": 0.05663543948059745,
+      "max_95percent_halfwidth_interaction_coherence": 0.022953620279388125,
+      "max_top_tier_mass": 0.0,
+      "reference_max_edge_population": 0.33883665368623,
+      "reference_max_trace_error": 6.661338147750939e-16,
+      "hops_wall_seconds": 149.45089491736144,
+      "hierarchy_states": 36,
+      "trajectories": 4096
+    },
+    "quantum_rabi": {
+      "model": "quantum_rabi",
+      "max_reduced_trace_distance": 0.008136652656696858,
+      "final_reduced_trace_distance": 0.0026759111869357373,
+      "max_photon_population_error": 0.021710502226102574,
+      "max_inter_mode_coherence_error": 0.009908916524841006,
+      "max_anomalous_correlation_error": 0.028042720442649067,
+      "max_joint_photon_number_error": 0.03773169700830071,
+      "max_system_photon_number_error": 0.03353971187941221,
+      "max_interaction_coherence_error": 0.03084850496730938,
+      "max_95percent_halfwidth_q2": 0.011979541319700903,
+      "max_95percent_halfwidth_photon_population": 0.033262585998164944,
+      "max_95percent_halfwidth_hopping_current": 0.01620423487077943,
+      "max_95percent_halfwidth_system_photon_number": 0.05931437245523062,
+      "max_95percent_halfwidth_interaction_coherence": 0.039850487665704634,
+      "max_top_tier_mass": 0.18859884493507925,
+      "reference_max_edge_population": 4.466020987837852e-06,
+      "reference_max_trace_error": 8.881923899123886e-16,
+      "hops_wall_seconds": 149.76066170819104,
+      "hierarchy_states": 36,
+      "trajectories": 4096
+    }
+  },
+  "convergence_checks": {
+    "rabi_reference_cutoff_7_to_8_max_reduced_trace_distance": 0.0001251874396243718,
+    "rabi_reference_cutoff_8_to_9_max_reduced_trace_distance": 0.000024852279242485226,
+    "rabi_reference_cutoff_8_to_9_max_normal_correlation_change": 0.000018934205760823525,
+    "rabi_reference_cutoff_8_to_9_max_anomalous_correlation_change": 0.00013005529376194867,
+    "paired_rabi_hops_depth_7_to_9_max_reduced_trace_distance": 0.0001084663775469984,
+    "paired_rabi_hops_depth_7_to_9_max_normal_correlation_change": 0.00007679476832356258,
+    "paired_rabi_hops_depth_7_to_9_max_anomalous_correlation_change": 0.000136805688235833
+  }
+}

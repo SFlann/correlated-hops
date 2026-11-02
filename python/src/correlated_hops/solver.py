@@ -10,6 +10,7 @@ from numpy.typing import ArrayLike
 from ._validation import integer
 from .bath import Bath, stationary_noise
 from .hierarchy import hierarchy
+from .observables import concurrence, connected, expectation, partial_trace
 
 
 @dataclass(frozen=True)
@@ -36,6 +37,31 @@ class Model:
         object.__setattr__(self, "hamiltonian", H)
         object.__setattr__(self, "couplings", F)
 
+    def solve(
+        self,
+        initial: ArrayLike,
+        times: ArrayLike,
+        *,
+        dt: float = 0.01,
+        kmax: int | Sequence[int] = 4,
+        samples: int = 100,
+        seed: int | None = 0,
+        nonlinear: bool = True,
+        noise: ArrayLike | None = None,
+    ) -> "Result":
+        """Evolve this model; arguments and diagnostics match :func:`solve`."""
+        return solve(
+            self,
+            initial,
+            times,
+            dt=dt,
+            kmax=kmax,
+            samples=samples,
+            seed=seed,
+            nonlinear=nonlinear,
+            noise=noise,
+        )
+
 
 @dataclass
 class Result:
@@ -56,6 +82,22 @@ class Result:
             np.einsum("tsi,tsj->tij", self.roots, self.roots.conj())
             / self.roots.shape[1]
         )
+
+    def expectation(self, operator: ArrayLike) -> np.ndarray:
+        """Expectation of a system operator in the ensemble density."""
+        return expectation(self.density, operator)
+
+    def connected(self, first: np.ndarray, second: np.ndarray) -> np.ndarray:
+        """Connected correlation formed after averaging root projectors."""
+        return connected(self.density, first, second)
+
+    def concurrence(self) -> np.ndarray:
+        """Two-qubit concurrence of the ensemble, not individual trajectories."""
+        return concurrence(self.density)
+
+    def partial_trace(self, keep: list[int], dimensions: list[int]) -> np.ndarray:
+        """Reduced ensemble density, retaining subsystems in their original order."""
+        return partial_trace(self.density, keep, dimensions)
 
 
 def solve(

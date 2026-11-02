@@ -54,6 +54,17 @@ class Bath:
             raise ValueError("time must be finite and nonnegative")
         return expm(-self.W * time)
 
+    def sample(
+        self, dt: float, steps: int, samples: int, seed: int | None = 0
+    ) -> np.ndarray:
+        """Draw stationary correlated noise, shaped (steps + 1, modes, samples).
+
+        This is the same exact grid sampler as :func:`stationary_noise`.
+        Couplings belong to the system model; the noise has unit equal-time
+        covariance. For timestep refinement, subsample one fine path.
+        """
+        return stationary_noise(self, dt, steps, samples, seed)
+
 
 def stationary_noise(
     bath: Bath, dt: float, steps: int, samples: int, seed: int | None = 0

@@ -7,6 +7,7 @@ export Engine,
     means,
     generator,
     advance,
+    bath_kernel,
     stationary_noise,
     diagnostics,
     spin_correlations,
@@ -284,12 +285,23 @@ function advance_step(e::Engine, psi::MPS, shift, z0, zm, dt)
     return out, new_shift, discarded, maximum_bond_dimension
 end
 
+"""Vacuum kernel exp(-W*time) in the local bath basis, for nonnegative time.
+
+System coupling strengths are held separately in the Engine; at zero lag
+the bath kernel is the identity. Unequal losses remain in the full drift.
+"""
+function bath_kernel(e::Engine, time::Real)
+    isfinite(time) && time >= 0 ||
+        throw(ArgumentError("time must be finite and nonnegative"))
+    return exp(-time * e.W)
+end
+
 """Exact stationary OU samples with shape (modes, steps + 1); dt is the grid spacing."""
 function stationary_noise(e::Engine, dt, steps, seed=0)
     steps = integer_parameter(steps, "steps"; minimum=0)
     isfinite(dt) && dt > 0 || throw(ArgumentError("invalid noise grid"))
     n = length(e.kmax)
-    p = exp(-dt * e.W)
+    p = bath_kernel(e, dt)
     q = Hermitian(Matrix{ComplexF64}(I, n, n) - p * p')
     eig = eigen(q)
     minimum(eig.values) >= -1e-11 || error("Invalid noise covariance")

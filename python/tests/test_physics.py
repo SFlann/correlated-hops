@@ -38,6 +38,26 @@ def test_undamped_noise_is_unitary():
     np.testing.assert_allclose(z[1], b.kernel(0.1) @ z[0], atol=1e-7)
 
 
+def test_noise_joint_covariance_includes_nonzero_origins_and_negative_lags():
+    bath = Bath([[0.4, 0.2 + 0.15j], [0.2 - 0.15j, 1.2]], [0.08, 0.9])
+    z = bath.sample(0.2, 5, 30000, seed=1729)
+    selected = [0, 2, 5]
+    joint = z[selected].reshape(6, 30000)
+    times = np.array(selected) * 0.2
+    target = np.block(
+        [
+            [
+                bath.kernel(t - s) if t >= s else bath.kernel(s - t).conj().T
+                for s in times
+            ]
+            for t in times
+        ]
+    )
+    np.testing.assert_allclose(joint @ joint.conj().T / 30000, target, atol=0.035)
+    np.testing.assert_allclose(joint @ joint.T / 30000, np.zeros((6, 6)), atol=0.035)
+    np.testing.assert_allclose(joint.mean(axis=1), np.zeros(6), atol=0.025)
+
+
 @pytest.mark.parametrize("nonlinear", [False, True])
 def test_zero_coupling_recovers_schrodinger(nonlinear):
     model = spin_chain(2, g=0, J=0.4, delta=1.3)

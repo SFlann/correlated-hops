@@ -58,7 +58,9 @@ jobs:
       - run: pytest
       - run: python tools/generate_fixtures.py --check
       - run: python data/verify.py
-      - run: python examples/python/rabi_pair.py
+      - run: python tools/verify_example_assets.py
+      - run: python examples/python/rabi_pair.py --samples 256 --batch-size 64 --t-end 2
+      - run: python examples/python/noise_convergence.py --samples 2000 --no-animation
       - run: python data/plot.py Fig3 --output examples/output/Fig3.png
       - uses: actions/upload-artifact@v7
         if: matrix.python == '3.12'

@@ -1,8 +1,9 @@
-include CHANGELOG.md CITATION.cff CONTRIBUTING.md
+include CHANGELOG.md CITATION.cff CONTRIBUTING.md data/LICENSE
 include .JuliaFormatter.toml
 recursive-include requirements *.txt
 recursive-include python/tests *.py
-recursive-include docs *.md *.png
+recursive-include docs *.md *.png *.gif *.pdf *.mp4
+recursive-include data/examples *.md *.json *.npz *.py
 recursive-include examples *.py *.jl
 recursive-include tools *.py
 include tools/julia/Project.toml
