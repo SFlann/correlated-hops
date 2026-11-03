@@ -38,7 +38,7 @@ the vacuum bath correlation is
 $$
 K_{ij}(\tau)=\langle a_i(\tau)a_j^\dagger(0)\rangle
 =\left[e^{-W\tau}\right]_{ij},\qquad
-W=\operatorname{diag}(\kappa_i/2)+ih,\quad \tau\geq0.
+W=\mathrm{diag}(\kappa_i/2)+ih,\quad \tau\geq0.
 $$
 
 The reference Gaussian field satisfies

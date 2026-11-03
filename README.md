@@ -104,7 +104,7 @@ $$
 \mathbb{E}\left[z_i(t)z_j^*(s)\right]
 &=K_{ij}(t-s)=\left\langle a_i(t)a_j^\dagger(s)\right\rangle,\\
 K(\tau)&=e^{-W\tau},\qquad
-W=\operatorname{diag}(\kappa_i/2)+ih,\quad \tau=t-s\geq0.
+W=\mathrm{diag}(\kappa_i/2)+ih,\quad \tau=t-s\geq0.
 \end{aligned}
 $$
 
