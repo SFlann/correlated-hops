@@ -16,8 +16,8 @@ Each `figures/Fig*/` directory contains:
 - `metadata.json`: observable labels, axis ranges, line identities/styles,
   legends, the manuscript caption, and the source plotting-driver checksum.
 
-The archive is extracted from the original numerical plotting inputs, not
-digitised from images. It retains the estimator and uncertainty conventions of
+The archive contains numerical plotting inputs extracted directly from
+computed arrays. It retains the estimator and uncertainty conventions of
 each figure. Confidence levels differ across figures: read the caption rather
 than treating every shaded interval as one standard error. Master-equation,
 HOPS and explicit-cavity stochastic reference curves remain separate.
@@ -62,9 +62,8 @@ with mixed data/axes coordinates are explicitly marked in the metadata.
 | S14 | Complex hopping and timestep checks |
 
 `manifest.json` records a SHA-256 checksum for every data file. The relative
-source-driver paths identify the original analysis within the research project;
-they are provenance identifiers, not runtime dependencies. All data needed by
-the convenience plotter are inside this repository. The full production
-trajectory/checkpoint archive is deliberately not duplicated here.
+source-driver paths are provenance identifiers, not runtime dependencies.
+All data needed by the convenience plotter are inside this repository;
+individual trajectory checkpoints are outside the plotting archive.
 
 Numerical data: [CC BY 4.0](LICENSE).

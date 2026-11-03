@@ -4,9 +4,9 @@
 
 - Add the compatible object workflow `Bath.sample`, `Model.solve` and ensemble
   observable methods on `Result`; expose Julia's `bath_kernel(engine, time)`.
-- Extend the original README physics example through time 24 with a fixed
-  4,096-trajectory ensemble per case and independent numerical refinement checks.
-- Include the earlier two-qubit note, its original figures and data provenance.
+- Provide a two-spin example through time 24 with a fixed 4,096-trajectory
+  ensemble per case and independent numerical refinement checks.
+- Include a two-qubit excitation-transport derivation, figures and benchmark data.
 - Add a standalone correlated-noise study, cumulative convergence animation,
   static panels and tests of covariance at multiple time origins.
 

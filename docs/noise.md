@@ -1,9 +1,16 @@
-# Correlated noise is a standalone part of the package
+# Correlated Gaussian noise for HOPS
+
+HOPS represents the environment's influence using complex Gaussian fields
+and a hierarchy of memory states. The field covariance must equal the bath
+correlation matrix. For communicating environments, off-diagonal entries
+couple different sites at different times: reproducing each site's local
+noise spectrum alone is insufficient. The same matrix enters the hierarchy
+drift, so both parts of the calculation describe the same quantum bath.
 
 `Bath` describes a passive Gaussian cavity network. Its `kernel(t)` and
 `sample(...)` methods can be used without a spin model or a HOPS trajectory.
-The solver uses this same sampler internally. The existing functional
-`stationary_noise(bath, ...)` API remains available.
+The solver uses this same sampler internally. The functional
+`stationary_noise(bath, ...)` API is equivalent to `bath.sample(...)`.
 
 ```python
 import numpy as np
@@ -26,22 +33,26 @@ Individual paths remain random as the estimated correlation converges.
 ## What is sampled
 
 For the Hermitian hopping matrix $h$ and photon-number losses $\kappa_i$,
+the vacuum bath correlation is
 
 $$
-W=\operatorname{diag}(\kappa_i/2)+ih,\qquad
-K(\tau)=e^{-W\tau},\quad \tau\geq0.
+K_{ij}(\tau)=\langle a_i(\tau)a_j^\dagger(0)\rangle
+=\left[e^{-W\tau}\right]_{ij},\qquad
+W=\operatorname{diag}(\kappa_i/2)+ih,\quad \tau\geq0.
 $$
 
 The reference Gaussian field satisfies
 
 $$
-\mathbb E[z(t)z(s)^\dagger]=K(t-s),\qquad
-\mathbb E[z(t)z(s)^T]=0,\qquad \mathbb E[z(t)]=0
+\mathbb{E}[z(t)z(s)^\dagger]=K(t-s),\qquad
+\mathbb{E}[z(t)z(s)^T]=0,\qquad \mathbb{E}[z(t)]=0
 $$
 
 for $t\geq s$, with $K(-\tau)=K(\tau)^\dagger$ for negative lags.
-At equal times the covariance is the identity. Coupling amplitudes such as
-$g$ belong to the system operators in `Model`, so they are not counted twice
+At equal times the covariance is the identity, but hopping generally produces
+nonzero off-diagonal entries at finite lag. Sampling independent site noises,
+or matching only the equal-time covariance, loses these correlations.
+Coupling amplitudes such as $g$ belong to the system operators in `Model`, so they are not counted twice
 in this kernel. For a physical field $B_i=g_i a_i$, multiply the corresponding
 kernel entries by $g_i g_j^*$.
 
@@ -88,19 +99,24 @@ The default calculation samples 100,000 paths in bounded batches of 512 and
 writes arrays, a JSON validation record, a GIF and the four-panel PNG to
 `examples/output/`. The GIF requires no external video encoder.
 
-The original September study is also preserved: [34-second MP4](media/noise_convergence_original.mp4),
-[original complex estimates](../data/examples/earlier_noise/noise_convergence.npz)
-and [validation record](../data/examples/earlier_noise/validation.json).
-It used a normal-mode implementation for uniform damping. The new example
-uses the public local-basis `Bath.sample` method with the **same physical
-parameters**, but a separately recorded batch/seed scheme; it is not the
-same set of random paths. Both are genuine Monte Carlo calculations.
+The [34-second MP4](media/noise_convergence_original.mp4) shows a normal-mode
+sampling calculation for the same ten-mode model with uniform damping. Its
+[complex estimates](../data/examples/earlier_noise/noise_convergence.npz) and
+[validation record](../data/examples/earlier_noise/validation.json) are included.
+The GIF uses the public local-basis `Bath.sample` method. Both sample the same
+physical covariance, with independently recorded batch and seed schemes;
+they therefore use different random paths. Unequal losses are supported by
+the local-basis sampler through the full matrix drift.
+
+This example studies a free ten-mode bath. The two-qubit transport model
+in the [excitation-transport guide](two-qubit-note.md) additionally couples
+spins to two cavities, with different frequencies, hopping and preparation.
 
 ## Propagation behind the covariance
 
 ![One-photon propagation at three hopping strengths](images/hopping_photon_propagation.png)
 
-These original reference panels show $|K_{j1}(t)|^2$ for a one-photon probe
+These reference panels show $|K_{j1}(t)|^2$ for a one-photon probe
 in a ten-site open chain at three hopping strengths, with common colour and
 time scales. Hopping transports the excitation; the finite chain produces
 returns, and number loss damps the probability. The HOPS influence kernel is
