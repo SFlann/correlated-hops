@@ -14,6 +14,7 @@ authors = [{name = "Stuart Flannigan"}]
 dependencies = ["numpy>=1.24", "scipy>=1.10"]
 
 [project.optional-dependencies]
+qutip = ["qutip>=5.2,<6"]
 plot = ["matplotlib>=3.7"]
 test = ["pytest>=7"]
 dev = ["build>=1.2", "ruff>=0.9"]

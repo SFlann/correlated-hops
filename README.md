@@ -89,6 +89,21 @@ entanglement = result.concurrence()
 All energies are angular frequencies and hbar is one. Each `kmax` is an upper
 hierarchy index, so the associated local dimension is `kmax + 1`.
 
+## Compare statevector HOPS with QuTiP HEOM
+
+Install the optional dependency with `python -m pip install -e '.[qutip]'` and
+run `python examples/python/qutip_heom.py`. Two spins start in |10⟩ with
+independent local spin–cavity couplings. The example measures the second
+spin's excitation with cavity hopping switched off and on. Equal cavity
+losses make the symmetric and antisymmetric modes independent, so QuTiP
+HEOM and local-basis HOPS describe the same vacuum bath. For unequal losses
+this rotation generally also mixes the damping channels.
+
+The script reports the ensemble mean, its final-time standard error, the
+largest discrepancy over the output grid and a HEOM hierarchy-depth check.
+Sampling errors describe trajectory variation at fixed HOPS timestep and
+hierarchy cutoff.
+
 ## Correlated noise: watch the kernel emerge
 
 Correlated Gaussian noise is a fundamental input to HOPS. Its covariance must
