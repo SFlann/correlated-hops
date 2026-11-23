@@ -1,6 +1,7 @@
 # Correlated HOPS
 
 [![Tests](https://github.com/SFlann/correlated-hops/actions/workflows/tests.yml/badge.svg)](https://github.com/SFlann/correlated-hops/actions/workflows/tests.yml)
+[![PyPI version](https://img.shields.io/pypi/v/correlated-hops.svg)](https://pypi.org/project/correlated-hops/)
 
 **Stochastic pure-state dynamics for systems coupled to communicating environments.**
 
